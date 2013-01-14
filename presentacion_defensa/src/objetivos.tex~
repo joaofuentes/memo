@@ -1,0 +1,25 @@
+\frame{
+	\frametitle{Objetivos de la Memoria de Titulación}
+	\begin{enumerate}
+	  \item Investigar tecnologías existentes y emergentes para el desarrollo de aplicaciones web
+	  \begin{enumerate}
+	   \item Revisar la evolución histórica de las tecnologías asociadas al desarrollo de aplicaciones web.
+	   \item Realizar un levantamiento del estado del arte.
+	  \end{enumerate}
+	  \item Investigar y evaluar cómo las tecnologías recientes pueden ayudar a desarrollar mejores aplicaciones web y mejorar
+	    los procesos de desarrollo de software.
+	   \begin{enumerate}
+	    \item Definir criterios de clasificación general y selección de las tecnologías específicas a investigar.
+	    \item Aplicar los criterios anteriores para seleccionar un conjunto de tecnologías a investigar en mayor profundidad.
+	    \item Evaluar en mayor detalle las tecnologías seleccionadas.
+	   \end{enumerate}
+	  \item Desarrollar una aplicación de prueba y desarrollar un prototipo aplicando las tecnologías seleccionadas que permita
+	    entender, integrar y evaluar estas tecnologías. Eventualmente comparar la aplicación con tecnologías más tradicionales.
+	   \begin{enumerate}
+	    \item Diseñar y desarrollar el prototipo aplicando diferentes tecnologías.
+	    \item Evaluar cada uno de los casos de aplicación.
+	   \end{enumerate}
+	  \item Hacer una evaluación global y obtener conclusiones.
+	\end{enumerate}
+	
+}

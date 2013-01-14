@@ -1,0 +1,129 @@
+%Este apartado corresponde a la información recapitulada de la herramienta node.js:
+
+Consiste en un framework de Javascript basado en el motor V8.\\
+
+Que problema resuleve node.js
+
+La meta número uno declarada de Node es "proporcionar una manera fácil para construir programas de 
+red escalables". ¿Cuál es el problema con los programas de servidor actuales? Hagamos cuentas. En lenguajes 
+como Java™ y PHP, cada conexión genera un nuevo hilo que potencialmente viene acompañado de 2 MB de memoria. 
+En un sistema que tiene 8 GB de RAM, esto da un número máximo teórico de conexiones concurrentes de cerca de 
+4.000 usuarios. A medida que crece su base de clientes, si usted desea que su aplicación soporte más usuarios,
+necesitará agregar más y más servidores. Desde luego, esto suma en cuanto a los costos de servidor del negocio, 
+a los costos de tráfico, los costos laborales, y más. Además de estos costos están los costos por los problemas 
+técnicos potenciales — un usuario puede estar usando diferentes servidores para cada solicitud, así que cualquier 
+recurso compartido debe almacenarse en todos los servidores. Por todas estas razones, el cuello de botella en 
+toda la arquitectura de aplicación Web (incluyendo el rendimiento del tráfico, la velocidad de procesador y la 
+velocidad de memoria) era el número máximo de conexiones concurrentes que podía manejar un servidor.\\
+
+Node resuelve este problema cambiando la forma en que se realiza una conexión con el servidor. En lugar de 
+generar un nuevo hilo de OS para cada conexión y de asignarle la memoria necesaria, cada conexión dispara una 
+ejecución de evento dentro del proceso del motor de Node. Node también afirma que nunca se quedará en punto muerto, 
+porque no se permiten bloqueos y porque no se bloquea directamente para llamados E/S. Node afirma que un servidor que 
+lo ejecute puede soportar decenas de miles de conexiones concurrentes.\\
+
+(NOTA, buscar sobre la programacion orientada a eventos)\\
+
+Utiliza la máquina virtual de javascript de google conocida como v8 para interpretar el código javascript. 
+La segunda característica más notable es que puede levantar servidores web en casi cualquier puerto que se le indique 
+y generar llamadas tipo comet, osea que son conexiones persistentes que se comportan como sockets y que hacen posible 
+la comunicación única bidirideccional entre el cliente y el servidor.[2]\\
+
+Mas informacion y ejemplos en [3] [4]\\
+
+
+
+\textbf{Para que sirve?}\\
+Sirve para  manejar sitaciones dond hay alto tráfico de datos, y donde la cantidad de datos a procesar en el servidor, no 
+sea demasiado alta (antes de enviar una respuesta al cliente). Algunos ejemplos son:
+
+\begin{itemize}
+ \item API RESTful: Una REST API es una API, o librería de funciones, a la que se accede por el protocolo HTTP. 
+Una REST API, por tanto, se accede a través de direcciones web o URLs en las que enviamos los datos de nuestra consulta. 
+Como respuesta a la consulta sobre el REST API se obtienen datos en diferentes formatos, como pueden ser texto plano, 
+XML, JSON, etc.[1]
+ \item Fila de Twitter
+ \item Estadistica de videojuegos
+\end{itemize}
+
+%1) API RESTful: Una REST API es una API, o librería de funciones, a la que se accede por el protocolo HTTP. 
+%Una REST API, por tanto, se accede a través de direcciones web o URLs en las que enviamos los datos de nuestra consulta. 
+%Como respuesta a la consulta sobre el REST API se obtienen datos en diferentes formatos, como pueden ser texto plano, 
+%XML, JSON, etc.[1]
+%2) Fila de Twitter
+%3) Estadistica de videojuegos
+
+
+
+%Sobre el uso de módulos\\
+
+Así como a lo que las personas se han acostumbrado al trabajar con Apache, es posible expandir la funcionalidad de Node 
+instalando módulos. No obstante, los módulos que se pueden utilizar con Node mejoran en gran medida el producto, tanto, 
+que es poco probable que haya alguien que utilice Node sin instalar por lo menos algunos módulos. Así de importantes se 
+han tornado los módulos, hasta el punto de convertirse en parte esencial del producto completo [5].
+
+
+NodeJS y NPM
+
+
+\subsection{Plataformas}
+
+En la página oficial [6], están habilitadas las descargas para:
+\begin{itemize}
+ \item Windows
+ \item Mac OS X
+ \item Linux
+ \item SunOS
+\end{itemize}
+
+%nota: buscar acerca del bloqueo en el manejo en node.js
+
+
+[1] http://www.desarrolloweb.com/wiki/rest-api.html (hora de cosulta 28-11-12 17:11)
+
+[2] http://www.quantium.com.mx/2012/08/06/nodejs/ (hora de consulta 28-11-12 18:18)
+
+[3] http://www.rmunoz.net/introduccion-a-node-js.html (hora de consulta 28-11-12 18:25)
+
+[4] http://www.quizzpot.com/2011/01/como-instalar-node-js-y-escribir-primeros-programas/ (hora de consulta 28-11-12 18:01)
+
+[5] https://npmjs.org (hora de consulta 28-11-12 18:10)
+
+[6] http://nodejs.org/download/ (hora de consulta 29-11-12 19:10) 
+
+
+\subsection{Hello World}
+
+Es necesario entrara a esta página http://nodejs.org/, install, y luego seguir los pasos
+que salen en el archivo README.md
+\begin{verbatim}
+  ./configure
+  make
+  make install (pide permisos de root)
+\end{verbatim}
+
+y para el error del gcc 
+\begin{verbatim}
+ make
+make -C out BUILDTYPE=Release V=1
+make[1]: Entering directory `/home/joao/memoria-jfuentes-heramientas/nodejs/node-v0.8.14/out'
+  g++ '-D_LARGEFILE_SOURCE' '-D_FILE_OFFSET_BITS=64' '-DENABLE_DEBUGGER_SUPPORT' 
+  '-DV8_TARGET_ARCH_X64' -I../deps/v8/src  -Wall -pthread -m64 -fno-strict-aliasing -O2 
+  -fno-strict-aliasing -fno-tree-vrp -fno-rtti -fno-exceptions -MMD -MF 
+  /home/joao/memoria-jfuentes-heramientas/nodejs/node-v0.8.14/out/Release/.deps/
+  /home/joao/memoria-jfuentes-heramientas/nodejs/node-v0.8.14/out/Release/obj.target/v8_base/deps/v8/src/accessors.o.d.raw  
+  -c -o /home/joao/memoria-jfuentes-heramientas/nodejs/node-v0.8.14/out/Release/obj.target/v8_base/deps/v8/src/accessors.o 
+  ../deps/v8/src/accessors.cc
+make[1]: g++: Command not found
+make[1]: *** [/home/joao/memoria-jfuentes-heramientas/nodejs/node-v0.8.14/out/Release/obj.target/v8_base/deps/v8/src/accessors.o] 
+  Error 127
+make[1]: Leaving directory `/home/joao/memoria-jfuentes-heramientas/nodejs/node-v0.8.14/out'
+make: *** [node] Error 2
+
+	yum install gcc-c++
+\end{verbatim}
+
+y seguir las instrucciones de la pagina oficial.\\
+
+Una de las características de nodejs es el paso de parametros por url. Hay un ejemplo que
+permite generar un número aleatorio desde 0 a $X$, siendo este un valor que se cambia en la url.

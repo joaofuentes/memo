@@ -1,0 +1,44 @@
+\documentclass[letter, 10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage[top=3cm,bottom=3cm,left=3.5cm,right=3.5cm,footskip=1.5cm,headheight=1.5cm,headsep=.5cm,textheight=3cm]{geometry}
+
+
+\begin{document}
+\title{Evaluación de tecnologías emergentes basadas en Javascript para el desarrollo de aplicaciones web \\ \begin{Large}Avance de descripción del estado del arte\end{Large}}
+\author{Jo\~ao Fuentes Pacheco}
+\date{\today}
+\maketitle
+
+\input{caracteristicas}
+\section{V8}
+  \input{v8}
+  \newpage
+  
+\section{node.js}
+  \input{nodejs}
+  %\newpage
+  
+\section{QOOXDOO}
+  \input{qooxdoo}
+  %\newpage
+  
+\section{Jquery}
+  \input{jquery}
+  %\newpage
+  
+\section{KendoUI}
+  \input{kendo}
+  %\newpage
+  
+\section{Tabla comparativa}
+  \input{tabla}
+  
+  
+\section{Conclusiones}
+  \input{conclusiones}
+\end{document}

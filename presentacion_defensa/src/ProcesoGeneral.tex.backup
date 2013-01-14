@@ -1,0 +1,22 @@
+\frame{
+	\frametitle{Procesos de desarrollo de Software de carácter general}
+	\begin{itemize}
+	    \item Importancia de contar con un proceso de desarrollo a la hora de crear software.
+	    \item Criterios "universalmente" aceptados:
+	    \begin{itemize}
+	      \item Modelo Cascada
+		  \begin{itemize}
+		   \item No permite depuración.
+		   \item Se puede arreglar diseño de software o código sólo al final.
+		  \end{itemize}
+	      \item Modelo Iterativo - Incremental 
+		  \begin{itemize}
+		   \item Permite depuración en ciertas etapas del proceso.
+		   \item Es posible detectar y corregir errores de diseño y/o código durante el proceso.
+		  \end{itemize}
+	    \end{itemize}
+	    \item Criterios conocidos como "tradicionales".
+	    \item Basados en otras ingenierías: planificación total antes de comenzar el ciclo de desarrollo.
+
+	\end{itemize}
+}

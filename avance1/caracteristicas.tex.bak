@@ -1,0 +1,60 @@
+La idea de este documento es poder dejar en claro, las características, plataformas, relaciones de las diversas herramientas 
+que se estudiarán en esta memoria de pregrado. Cabe destacar que este documento, por si solo, no sirve para efectos de 
+presentación formalpara esta memoria, pues corresponde a un mero avance: recopilación de información, análisis y algunas 
+conclusiones.\\
+
+Se quiere dejar en claro los pasos necesarios para obtener, instalar y dar los primeros pasos de la diversas herramientas 
+que se estudiarán.\\
+
+Estas pruebas se realizarán en un sistema operativo GNU/Linux (específicamnete Fedora 17 (x64)).\\
+
+
+%Para ver como instalar cada una de ellas, por favor, vea el documento "instalaciones"
+
+El orden en que se verán estas tecnologías no es trivial, pues van desde herramientas asociadas
+al ``backend`` a las que están asociadas al ''frontend``.\\
+
+Por lo tanto el orden establecido es:
+\begin{enumerate}
+ \item V8 Engine
+ \item Node.js
+ \item QOOXDOO
+ \item Jquery
+ \item Kendo
+\end{enumerate}
+
+Se verá por herramienta:
+\begin{itemize}
+ \item Descripción%, diseño.
+ \item Características%, plataformas.
+ \item How to hello\_world
+
+\end{itemize}
+
+
+Finalmente se realizarán comparaciones en una tabla resumen\\
+%la cual tendrá 
+%
+%    i. Características
+%   ii. Plataformas 
+%  iii. Sistemas Operativos
+%   iv. Uso de Plugins
+%    v.
+
+Cabe destacar que estas herramientas corresponden a frameworks de dessarrollo. Pero ¿qué es un framework?
+Corresponden a múltiples  herramientas asociadas entre sí, cuya finalidad son, en el caso del desarrollo web:
+\begin{enumerate}
+ \item No tener que lidiar con las particularidades de cada navegador.
+ \item Escribir menos código fuente y hacer cosas más espectaculares.[1]
+\end{enumerate}
+
+
+
+[1] http://www.desarrolloweb.com/articulos/introduccion-jquery-mobile.html (hora de consulta 29-11-12 14:53)
+
+
+Dudas:
+\\
+Nota(29-11-12 12:41), considerando que hay algunas herramientas, como qooxdoo y kendo que están
+pensadas para más de una plataforma y tipo de aplicación (no necesariamente webapp, sino que desktop
+o mobiles), preguntar si es necesario adentrarse en estas "versiones" o solo que darse con la parte web.

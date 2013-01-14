@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.06pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@sectionintoc {2}{Procesos de desarrollo de Software}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Procesos de caracter general}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Procesos orientados a desarrollo web}{6}{0}{2}
+\beamer@sectionintoc {3}{Tecnolog\IeC {\'\i }as Utilizadas para el desarrollo de aplicaciones web}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Web 1.0}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Web 2.0}{9}{0}{3}
+\beamer@subsectionintoc {3}{3}{Actualidad}{10}{0}{3}
+\beamer@subsectionintoc {3}{4}{Evoluci\IeC {\'o}n}{11}{0}{3}
+\beamer@sectionintoc {4}{Objetivos de la Memoria}{12}{0}{4}
+\beamer@sectionintoc {5}{Planificaci\IeC {\'o}n de Trabajo}{13}{0}{5}
+\beamer@subsectionintoc {5}{1}{Programa de Trabajo 1/2}{13}{0}{5}
+\beamer@subsectionintoc {5}{2}{Programa de Trabajo 2/2}{14}{0}{5}
+\beamer@sectionintoc {6}{Avances}{15}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{16}{0}{7}

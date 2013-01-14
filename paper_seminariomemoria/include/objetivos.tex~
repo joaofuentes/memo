@@ -1,0 +1,22 @@
+\section{Objetivos}
+%REVISARLOS UNA VEZ ESTÉ LISTO EL DOCUMNTO... COMO PAPER DE AVANCE SERÁ NECESARIO PONERLOS?
+%CONSIDERANDO QUE EL OBJETIVO ES INTERESAR AL LECTOR EN LA NECESIDAD DE INVESTIGAR
+Dentro del contexto de que existen varias tecnologías de carácter abierto que han ido apareciendo
+de forma reciente y que se están aplicando en el área del Desarrollo Web; y siguiendo la evolución natural
+de las tecnologías y procesos de desarrollo de software que se han ido mencionando en los puntos anteriores,
+los primeros objetivos propuestos para este tema de investigación son:
+
+\begin{enumerate}
+ \item Incentivar en la necesidad de investigar las tecnologías de desarrollo web, existentes y/o existentes.
+ \item Investigar cómo éstas tecnologías ayudan a desarrollar mejores aplicaciones Web y 
+ mejorar los procesos de desarrollo de software.
+ \item  Desarrollar un prototipo que permita integrar y evaluar estas tecnologías.
+\end{enumerate}
+
+\subsection{Caso de aplicación}
+Para concretizar la investigación, se buscará una situación real donde se pueda aplicar el objetivo 2, 
+de no encontrarse un caso real de aplicación, se construirá uno hipotético.
+
+%explayar la siguiente idea:
+%se va a buscar un caso real donde poder aplicar un protipo de integracion de nuevas tecnologías ( y prubas
+%sobre los datos del caso, ejemplo MTI), de no encontrarse uno, se utilizará un caso ficticio!!!

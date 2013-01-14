@@ -1,0 +1,245 @@
+\section{Tecnologías utilizadas en el Desarrollo de aplicaciones Web}
+\subsection{Un poco de historia}
+Antiguamente, la creación de un sitió web se limitaba sólo  a escribir cada página directamente con mediante
+código HTML. Esta tarea es factible solamente en sitios cuyo contenido es limitado y sus actualizaciones son casi nulas,
+características propias de la \textit{Web 1.0} es decir, las típicas  que ostentaban los sitios durante 
+la primera mitad de los años 90. 
+
+Posteriormente aparecen los lenguajes de desarrollo Web intentan facilitar las tareas de los creadores de aplicaciones, 
+de manera que se automaticen los procesos, y permitan entrar al juego a los usuarios, pasivos hasta ese momento, es decir
+se crea la web 2.0
+
+Por lo tanto, mientras que con HTML sólo es posible crear sitios Web estáticos, utilizando lenguajes 
+de desarrollo Web es posible crear sitios Web dinámicos. Se conoce con el nombre de sitio Web dinámico a aquel
+cuyo contenido se genera a partir de lo que un usuario introduce en un web o formulario. 
+
+
+\subsection{Web 1.0}
+\subsubsection{Características}
+La Web 1.0 o "web estática"\footnote{El termino estático se refiere a su falta de interacción con el usuario. Es decir que 
+el mismo sólo podía comunicarse con el desarrollador de la página a través del correo electrónico.} (1991-2003) es la forma más básica 
+que existe, con navegadores de sólo texto bastante rápidos. La aparición de HTML hizo que las páginas web fuesen más agradables 
+a la vista. Paralelamente aparecen los primeros navegadores visuales tales como Internet Explorer y Netscape [3]. Su principal
+característica es que es de sólo lectura, es decir que para el usuario no es posible interactuar con el contenido de la página 
+estando totalmente limitado a lo que el Webmaster sube a ésta.
+
+\subsubsection{Tecnologías de desarrollo}
+La tecnología predominante en la web 1.0, es el código HTML.
+
+HTML corresponde al acrónimo de \textit{HyperText Markup Language} y se trata de un conjunto de etiquetas que sirven para 
+definir el texto y otros elementos que compondrán una página web. Básicamente este lenguaje indica a los navegadores cómo 
+deben mostrar el contenido de una página web.
+
+HTML se creó con el objetivo de divulgar información, principalmente texto y posteriormente texto con imágenes. 
+Creado en 1986 por el físico nuclear Tim Berners-Lee [9], no se pensó que llegaría  a ser utilizado para crear sitios de 
+consulta con carácter multimedia. Sin embargo, pese a esta deficiente planificación, se han ido incorporando modificaciones 
+con el tiempo, estos son los estándares del HTML\footnote{El estándar actual corresponde a HTML5} [8].
+
+Desde el punto de vista del webmaster, la tarea de mantención de la página es relativamente simple, considerando la base de 
+la web 1.0. Sin embargo, se convierte en una tarea titánica en aquellos sitios con muchos contenidos y que incorporan 
+frecuentemente novedades. Por ejemplo, si se quieren realizar en HTML cambios sobre algún elemento común a todas las páginas 
+del sitio, se deben aplicar en todas las páginas, una por una, con lo que se  convierte en un trabajo muy tedioso. Por lo cual
+nace la necesidad de integrar al usuario a la faceta de creación y mantención de contenidos.
+
+\subsection{Web 2.0}
+\subsubsection{Características}
+
+El término Web 2.0 está asociado a aplicaciones web que están desarrolladas para compartir información, 
+pues su diseño está centrado en el usuario. Un sitio Web 2.0 está pensado para que los usuarios puedan interactuar 
+y colaborar entre sí [4], tomando el rol de creadores de contenido generado por ellos mismos en una comunidad virtual,
+lo cual es diametralmente opuesto al concepto de pasividad del usuario, algo predominante en la web 1.0.
+
+Por lo tanto, la Web 2.0 es una evolución del viejo concepto de cómo se usa la web, de manera
+unidireccional, como consumidores pasivos. El término, acuñado por Tim O'Reilly\footnote{En [6], realiza interesantes 
+comparaciones entre los elementos de la web 1.0 y la web 2.0} en una conferencia del renacimiento y la evolución de la web, 
+designa una nueva forma de servicios web basados en la participación de los usuarios, quienes conforman el motor básico del 
+sistema de información.
+
+La Web 2.0 se caracteriza por premiar la creatividad de los usuarios, fomentar su participación y transmisión del conocimiento 
+entre pares potenciando el sentido de comunidad. En esta nueva época la Web ya no es meramente informativa, sino que 
+el usuario toma rol consumidor, intercambiador y creador de contenidos. Los sitios web se convierten en fuentes de contenido y expresión
+para los usuarios. Es aquí donde de fundan los cimientos de la Web 2.0: Arquitectura de participación, redes sociales y 
+sabiduría de las multitudes, tan sólo por nombrar algunas.
+
+Debido al aumento en la participación de los usuarios, nacen premisas como: “todos tienen algo que decir y todos pueden hacerlo” 
+(Orihuela, 2006). El volumen de datos generados es tal, que se necesitan sistemas de filtrado, clasificación y 
+organización de la información; sistemas que además, deben estar basados en la arquitectura de la participación y la inteligencia 
+colectiva [5].
+
+%El hecho de que la Web 2.0 es cualitativamente diferente de las tecnologías web anteriores ha sido cuestionado por el creador de 
+%la World Wide Web Tim Berners-Lee, quien calificó al término como "tan sólo una jerga"- precisamente porque tenía la intención de que 
+%la Web incorporase estos valores en el primer lugar. 
+
+\subsubsection{Tecnologías de desarrollo}
+Ante la necesidad de empoderar a los usuarios, fueron surgiendo varios lenguajes de programación y tecnologías orientadas
+al desarrollo web necesarios para lograr la creación de sitios dinámicos.
+
+Un sitio web dinámico se puede generar a través de secuencias de comandos en un servidor web; cuando el cliente web recibe la 
+respuesta, la trata como una pagina HTML y la despliega. Un ejemplo de esto es cuando un usuario rellena los campos de un formulario y
+realiza el envío de la información, al momento de llegar al servidor dicha información se entrega a un programa o secuencia de comandos
+para que sea procesada, que por lo general corresponde a una interacción con una base de datos y la generación de una página HTML
+con información personalizada, la cual es reenviada al cliente.
+
+Por lo general, los sitios web dinámicos, estan compuestos por la combinación:
+\begin{itemize}
+ \item Plataforma del servidor web: Apache, Tomcat, entre otros.
+ \item Gestor de base de datos, que por lo general es de carácter relacional: Oracle, PostgreSQL, Microsoft SQL Server, MySQL, entre otros.
+ \item Lenguajes y tecnologías de programación web: Perl, PHP, JSP, CGI, JQuery, entre otros.
+\end{itemize}
+
+Dependiendo de las necesidades, se define la combinación adecuada. En este documento se revisarán algunas de los Lenguajes y
+tecnologías para el desarrollo web, relegando tanto la plataforma del servidor como el gestor de base de datos, pues se escapan 
+del alcance de la investigación.
+
+Algunas de las tecnologías de la llamada web 2.0 son:
+
+\begin{itemize}
+ \item CGI: Una forma tradicional a la hora de manejar formularios y páginas web interactivas, corresponde a un sistema denominado
+	    CGI \footnote{Common Gateway Interface por sus siglas en inglés, o Interfaz de Puerta de Enlace Común.}. En las aplicaciones
+	    CGI, el servidor web pasa las solicitudes del cliente a un programa externo.  La salida de dicho programa es enviada al cliente 
+	    en lugar del archivo HTML tradicional. El cliente se encarga de interpretar esta salida.
+
+ \item PHP: Otra forma de generar el contenido dinámico, corresponde a que sea el servidor quien ejecute las secuencias de comandos para
+	    generar la página HTML. PHP \footnote{Hypertext Pre-processor por sus siglas en inglés.}  tiene la ventaja de ser gratuito y 
+	    versátil, pues es soportado por la mayoría de los sistemas operativos y servidores; además de contar con múltiples herramientas
+	    de desarrollo como frameworks\footnote{Framework es un concepto sumamente genérico, se refiere a “ambiente de trabajo, 
+	    y ejecución”.En general los framework son soluciones completas que contemplan herramientas de apoyo a la construcción 
+	    (ambiente de trabajo o desarrollo) y motores de ejecución (ambiente de ejecución).} donde destacan PHPCake o Symfony. 
+	    Para utilizar PHP, el servidor Web debe entenderlo. Por lo general, las páginas Web que contienen comandos PHP utilizan la
+	    extensión “.php” en lugar de “.html”. De todos modos, el cliente nunca ve el código PHP, sino los resultados que produce
+	    en código HTML.
+    
+
+ \item JavaScript: A pesar de la gran potencia de las tecnologías anteriores, ninguna de ellas puede responder, por ejemplo,
+		   a los movimientos del ratón o interactuar de manera directa con los usuarios.
+		   Para lograr esto, es necesario tener secuencias de comandos embebidas en las páginas HTML, pero que a diferencia
+		   de, por ejemplo PHP,  se ejecuten en la máquina cliente y no en el servidor.
+		   JavaScript es un lenguaje de scripts interpretado que se integra directamente en páginas HTML (a veces por 
+		   modularidad se separa en ficheros con extensión “.js”) y es interpretado, en su totalidad, por el cliente Web 
+		   en tiempo de ejecución, sirviendo así para todos los sistemas operativos.
+ 
+ %\item Blogs y Redes sociales:
+ \end{itemize}
+
+\subsection{Evolución}
+\subsubsection{Características}
+Actualmente se está viviendo otra revo-lución, términos como web semántica y web 3.0 son cada vez más comunes. ¿Pero a qué se refieren?
+
+A fines de la década de 1990, comenzó a idearse un nuevo cambio en la Web. Era un cambio a la vez más complejo y más profundo que el que 
+ha representado la Web 2.0. Se trataba del proyecto de la Web Semántica.
+
+A grandes rasgos, el objetivo fundacional de la Web Semántica consistió en desarrollar una serie de tecnologías que permitieran a las
+computadoras, a través del uso de agentes de usuarios parecidos a los navegadores actuales, no solo “entender” el contenido de las 
+páginas web, sino además efectuar razonamientos sobre el mismo. La idea era conseguir que el enorme potencial de conocimiento
+encerrado en documentos como las páginas web pudiera ser interpretado por las computadoras de una forma parecida a como lo haría 
+un ser humano.[14]
+
+Utilizar números para marcar generaciones sucesivas de la Web parece una buena idea cuando se comprueba el éxito que tuvo la denominación 
+2.0. ¿Cuáles serían los rasgos de esta futura Web? Aquí se entra en un terreno difícil, puesto que no se trata de algo existente en la
+actualidad, sino de una especulación acerca de cómo se va encaminado la Web ahora y en el futuro cercano. Una forma de solucionar el 
+problema es lo que hacen algunos analistas y que consiste en identificar Web 3.0 con Web Semántica. Otros analistas los ven de forma 
+separada, donde la web 3.0 tiene las siguientes características:
+\begin{itemize}
+ \item Computación en la nube y Bases de datos no relacionales
+ \item Agentes de usuario (como en la Web Semántica)
+ \item Anchura de banda
+ \item Mayor acceso a internet
+\end{itemize}
+
+Si bien los dos últimos puntos son de carácter técnico, sin duda están teniendo repercusiones sociales. A mayor ancho de banda se facilita
+la ejecución de aplicaciones multimedia, mientras que un mayor acceso a internet no implica sólo que hay mayor cantidad de conexiones,
+sino que es posible conectarse desde toda clase de aparatos electrónicos, como celulares, tablets e incluso vehículos. Esto a su
+vez incentiva la creación e investigación de nuevas tecnologías a la hora de desarrollar aplicaciones web, ya sea para estandarizar
+aspectos entre dispositivos, plataformas, sistemas operativos; o bien para personalizar cada aplicación con el fin de sacarle el máximo
+provecho en un dispositivo en particular.
+
+De todos modos y en definitiva, de eso trata la Web 3.0, de páginas capaces de comunicarse con otras páginas mediante procesamiento 
+de lenguaje natural y, es justo aquí cuando cobra sentido el nexo entre la Web Semántica y la Web 3.0. Ésta es la principal interpretación
+que se hace de éste término. 
+
+\subsubsection{Tecnologías de desarrollo}
+
+Algunas de las tecnologías de reciente aparición (y no tan recientes), de carácter libre y que se están aplicando en el 
+área del desarrollo web, son:
+
+\begin{itemize}
+ \item QOOXDOO \footnote{http://qooxdoo.org/}: Qooxdoo es un framework universal de JavaScript que permite crear aplicaciones para 
+  una amplia gama de plataformas. Qooxdoo aprovecha las tecnologías web más modernas, como HTML5y CSS3. Es de código abierto,
+  está totalmente basado en clases y trata de aprovechar las características de orientación a objetos de JavaScript. 
+  Se basa completamente en los espacios de nombres y no se extiende tipos nativos de JavaScript para permitir una fácil integración 
+  con otras bibliotecas y código de usuario existente.[7]
+  Una aplicación típica de qooxdoo se crea mediante el aprovechamiento de las herramientas de desarrollo integrado y el modelo de 
+  programación del lado del cliente basada en orientación a objetos de JavaScript.
+  Algunas de sus características son:
+   \begin{enumerate}
+    \item Qooxdoo soporta una amplia gama de entornos de JavaScript, tales como navegadores convencionales
+      \footnote{Internet Explorer, Firefox, Opera, Safari, Chrome} y móviles \footnote{iOS, Android}
+    \item No necesita plugins (ActiveX, Flash, Silverlight)
+    \item Mantiene objetos nativos de JavaScript, con el fin de permitir una fácil integración con bibliotecas y código personalizado. 
+    \item Al estar bajo el paradigma de la orientación a objetos, está basado en clases (en su totalidad). Además soporta
+      clases abstractas.
+    \item Cuenta con soporte completo para programación basada en eventos
+    \item El desarrollo de aplicaciones qooxdoo es totalmente compatible con todas las plataformas, como Windows, todos los 
+      sistemas Unix (Linux), Mac OS X.
+    \item Cuenta con muchas aplicaciones de muestra y ejemplos.
+   \end{enumerate}
+ \item Node.js\footnote{http://nodejs.org/}: Es un entorno de programación basado en el lenguaje de programación 
+  Javascript, con I/O de datos y una arquitectura orientada a eventos. Fue creado con el enfoque de ser
+  útil en la creación de programas de red altamente escalables, como por ejemplo, servidores web.
+  Las primeras encarnaciones de JavaScript vivían en los browsers, es decir en el frontend. Sin embargo, lo anterior es solo un contexto,
+  pues JavaScript es un lenguaje "completo"; es decir, se puede  usar en muchos contextos y alcanzar con éste, todo lo que se puede
+  alcanzar con cualquier otro lenguaje "completo".
+  Por ello Node.js realmente es sólo otro contexto: permite correr código JavaScript en el backend, fuera del browser.
+  Para ejecutar el código JavaScript que se pretende correr en el backend, debe ser interpretado y ejecutado. Node.js se encarga
+  de esta tarea haciendo uso de la Maquina Virtual V8 de Google; que por lo demás es el mismo entorno de ejecución para JavaScript 
+  que Google Chrome utiliza.
+  Además, Node.js viene con muchos módulos útiles, de manera que no hay que escribir todo de cero.
+ 
+
+ \item V8 Engine \footnote{http://code.google.com/p/v8/}: Es un motor de JS desarrollado por Google. La 
+ ejecución de programas JS se realiza compilando el código, aumentando el desempeño respecto a Java ejecutado en lenguaje 
+ interpretado Bytecode.
+ Algunas de sus características son:
+ \begin{enumerate}
+  \item Está escrito en C++ y es usado en Google Chrome.
+  \item Está integrado en el navegador de internet del sistema operativo Android, al menos desde su versión Froyo.+
+  \item Corre en Windows (desde la versión XP), Mac OS X 10.5 (Leopard) y Linux en procesadores IA-32 y ARM.
+  \item V8 puede funcionar de manera individual (standalone) o incorporada a cualquier aplicación C++.
+ \end{enumerate}
+
+ \item MongoDB \footnote{http://www.mongodb.org/}: MongoDB es un sistema de base de datos multiplataforma orientado a documentos, 
+ de esquema libre. Al estar escrito en C++ le confiere cierta cercanía a los recursos de hardware de la máquina, de 
+ modo que es bastante rápido a la hora de ejecutar sus tareas. 
+ Al ser NoSQL, hay que olvidarse de las tablas y las relaciones entre ellas.
+ En MongoDB, cada registro o conjunto de datos se denomina documento. Los documentos se pueden agrupar en colecciones, las cuales se 
+ podría decir que son el equivalente a las tablas en una base de datos relacional (sólo que las colecciones pueden almacenar 
+ documentos con muy diferentes formatos, en lugar de estar sometidos a un esquema fijo). Se pueden crear índices para algunos 
+ atributos de los documentos, de modo que MongoDB mantendrá una estructura interna eficiente para el acceso a la información por 
+ los contenidos de estos atributos. [13] 
+ Se abandona el enfoque relacional por bases de datos mas orientadas a objetos y de esta manera es como se procesa la información.
+ 
+ \item Kendo \footnote{http://www.kendoui.com/}: Bajo el lema “El arte del desarrollo web” Kendo UI ofrece un completo abanico 
+ de posibilidades, siendo un Framework para la creación dinámica de mo-dernas interfaces se vale de las virtudes de HTML5, CSS3 
+ y jQuery para generar potentes elementos perfectamente compatibles con los navegadores más modernos como también para los 
+ dispositivos móviles más utilizados en la actualidad. [15]
+ La compatibilidad de Kendo UI es uno de sus puntos fuertes, ya sea con modernos navegadores o sistemas operativos móviles:
+ \begin{enumerate}
+  \item Internet Explorer 7+
+  \item Firefox 3+
+  \item Safari 4+
+  \item Chrome
+  \item Opera 10+
+  \item Android 2.0+
+  \item iOS 3.0+
+  \item BlackBerry OS 6.0+
+  \item webOS 2.2+
+ \end{enumerate}
+
+ 
+\end{itemize}
+
+%CoffeeScript \footnote{http://coffeescript.org/}: Es un lenguaje con sabor a Java que se puede traducir fácilmente a Java.
+
+%jQuery (http://jquery.com/). Biblioteca en JS para manipular documento HTML basados en DOM.
+
+%poner las metodologías que dijo el profe?

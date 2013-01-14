@@ -1,0 +1,109 @@
+%En este apartado se verá la información recapitulada de la herramienta web Jquery,
+
+Desde el portal [1], se pueden acceder a páginas relacionadas con Jquery.
+Destaca el core de jquery (jquery.com) y el ui (jqueryui.com)\\
+
+jQuery es una biblioteca o framework de Javascript, creada inicialmente por John Resig, que permite simplificar 
+la manera de interactuar con los documentos HTML, manipular el arbol DOM, manejar eventos, desarrollar animaciones 
+y agregar interacción con la tecnología AJAX a páginas web. Fue presentada el 14 de enero de 2006 en el BarCamp NYC.[4]\\
+
+Cuando un desarrollador tiene que utilizar Javascript, 
+generalmente tiene que preocuparse por hacer scripts compatibles con varios navegadores y para ello tiene que 
+incorporar mucho código que lo único que hace es detectar el browser del usuario, para hacer una u otra cosa 
+dependiendo de si es Internet Explorer, Firefox, Opera, etc. jQuery es donde más nos puede ayudar, puesto que 
+implementa una serie de clases (de programación orientada a objetos) que nos permiten programar sin preocuparnos 
+del navegador con el que nos está visitando el usuario, ya que funcionan de exacta forma en todas las plataformas 
+más habituales. [2]\\
+
+Además, todas estas ventajas que sin duda son muy de agradecer, con jQuery se obtenienen de manera gratuita, ya que 
+el framework tiene licencia para uso en cualquier tipo de plataforma, personal o comercial. Para ello simplemente 
+se debe incluir las páginas un script Javascript que contiene el código de jQuery, que se puede descargar 
+de la propia página web del producto y comenzar a utilizar el framework.\\
+
+El archivo del framework ocupa poco espacio (algunos KB solamente), lo que es bastante razonable y no retrasará mucho 
+la carga de la página. Además, el servidor lo enviará al cliente la primera vez que visite una página del sitio. 
+(Se envía el archivo jquery de forma directa al cargar la página con jquery la primera vez.)
+En siguientes páginas el cliente ya tendrá el archivo del framework, por lo que no necesitará transferirlo y lo tomará desde 
+la caché. Con lo que la carga de la página sólo se verá afectada por el peso de este framework una vez por usuario.\\
+
+%Las ventajas a la hora de desarrollo de las aplicaciones, así como las puertas que nos abre jQuery compensan extraordinariamente 
+%$el peso del paquete. 
+
+Cabe destacar que jquery no está solo en el mercado, es decir cuenta con ferrea competencia. Sin embargo es bastante popular.
+Además, es un producto serio, estable, bien documentado y con un gran equipo de desarrolladores a cargo de la mejora y 
+actualización del framework. Otra cosa muy interesante es la dilatada comunidad de creadores de plugins o componentes, 
+lo que hace fácil encontrar soluciones ya creadas en jQuery para implementar asuntos como interfaces de usuario, galerías, 
+votaciones, efectos diversos. \\
+
+
+jQuery es una herramienta imprescindible para desarrollar  sin tener que 
+complicarse con los niveles más bajos del desarrollo, ya que muchas funcionalidades ya están implementadas, o bien las 
+librerías del framework permitirán realizar la programación mucho más rápida y libre de errores.\\
+
+Lo más complicado de jQuery es aprender a usarlo, igual que pasa con cualquier otro framework Javascript. Requerirá del desarrollador 
+habilidades avanzadas de programación, así como el conocimiento, al menos básico, de la programación orientada a objetos. Una 
+vez aprendido las ventajas de utilizarlo compensarán más que de sobra el esfuerzo.\\
+
+Es posible acceder a un completo manual en [3].\\
+
+Existe una versión para dispositivos móbiles según [5]. Con los dispositivos móviles se han multiplicado el número de 
+navegadores y de plataformas. Existen muchos fabricantes, de 
+tablets y smartphones y diversos dispositivos con características distintas, como tamaños de pantallas, sistemas operativos
+diferentes y diversos navegadores basados en cada uno de ellos. Si antes con los navegadores para PCs había 
+problemas de compatibilidad, considerando sólo los 3 sistemas operativos y 3 navegadores populares, ahora con los móviles 
+todo se complica más.\\
+
+%Porque el desarrollo de sitios web con jQuery Mobile es todavía más automático de lo que era trabajar con jQuery. Con 
+%mucho menos código haces muchas más cosas.
+
+Con los dispositivos móviles todavía se hace más necesario usar un framework, que  
+facilita desarrollar una vez y ejecutar de manera compatible en todos los dispositivos. Además de ello, con 
+jQuery Mobile se reducirá drásticamente el tiempo de desarrollo de un sitio web para dispositivos móbiles.\\
+
+Se puede entender a jQuery Mobile como un plugin para jQuery puesto que es un producto que está basado en el propio 
+framework Javascript jQuery. Por tanto, aquellas personas que ya conocen jQuery no van a tener que aprender nada nuevo, 
+sino aplicar sus conocimientos y desarrollar fácilmente aplicaciones para móviles. Esto significa una gran ventaja, 
+puesto que hay muchas personas que conocen jQuery y que van a poder pasarse sin prácticamente ningún problema al 
+desarrollo para dispositivos.\\
+
+
+\subsection{Plataformas}
+Las plataformas soportadas por jquery, corresponden a los navegadores que sean compatibles con javascript. Cabe destacar
+que  se ha realizado soporte para HTML5 incluso para IE 6/7 y 8.
+%Además en su versión para dispositivos móbiles, se amplía
+%\begin{itemize}
+% \item listar los dispositivos
+%\end{itemize}
+
+
+
+[1] http://jquery.org/ (hora de consulta 29-11-12 13:15)
+
+[2] http://www.desarrolloweb.com/manuales/manual-jquery.html (hora de consulta 29-11-12 14:43)
+
+[3] http://www.desarrolloweb.com/articulos/introduccion-jquery.html (hora de consulta 29-11-12 14:04)
+
+[4] http://www.todoblogger.com/2010/08/que-es-jquery.html (hora de consulta 29-11-12 14:47)
+
+[5] http://www.desarrolloweb.com/articulos/introduccion-jquery-mobile.html (hora de consulta 29-11-12 14:51)
+
+
+\subsection{Hello World}
+
+Dentro del html, se invoca el archivo que contien a jquery. En la web hay muchos ejemplos de como utilizarlo.
+
+\begin{verbatim}
+    <script type="text/javascript" src="jquery-1.3.1.js"></script>
+\end{verbatim}
+
+En [6] hay un ejemplo de hola mundo utilizando Jquery
+\begin{verbatim}
+$(document).ready(function(){
+$("a").click(function() {
+alert("Hola Mundo con jQuery!");
+});
+});
+\end{verbatim}
+
+
+[6] http://lineadecodigo.com/jquery/hola-mundo-con-jquery/  (hora de consulta 29-11-12 15:29)

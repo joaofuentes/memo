@@ -1,0 +1,14 @@
+\begin{tabular}{l|c|c|c|c|c}
+	      & V8 & Node.js & QOOXDOO & Jquery & Kendo\\
+  \hline\\
+ PC   & si    &  si      & si & si & si\\
+ Móvil   & si    &  si      & si & si & si\\
+ Instalación   & si & si & no & no & no\\
+ Servidorcliente &  servidor y cliente  & servidor & cliente & cliente& cliente\\
+ Orientado a & Objetos & Eventos & Objetos & Eventos & Eventos\\
+ 
+ 
+\end{tabular}
+ %Plataformas  &    &        & & &
+ 
+ NOTA: Esta tablá ira creciendo conforme avance la investigación.

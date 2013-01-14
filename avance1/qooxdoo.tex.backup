@@ -1,0 +1,44 @@
+%Este apartado está destinado a revisar las acaracteristicas asociadas a la herramienta QOOXDOO
+
+Sirve para crear una GUI con javascript en aplicaciones web, en lugar de crearlas con html y css es orientado a objetos, 
+a diferencia de node.js q es orientado a eventos, es por ello que utiliza clases, interfaces (similares a las de java) y mezclas [3]\\
+
+Se viene gestando desde 2005[4]\\
+
+Las aplicaciones Web se suelen desarrollar utilizando XHTML, CSS y otras tecnologías similares. Sin embargo, 
+el código de la aplicación de eyeOS está programado en JavaScript y se utiliza una biblioteca de gráficos llamado 
+Qooxdoo (“QX”, para abreviar). Qooxdoo se utiliza para crear interfaces de usuario similares a las de otros escritorios
+mediante el uso de herramientas como Qt, GTK +, o el Swing, lo que permite desarrollar una GUI (interfaz gráfica 
+de usuario) con JavaScript en lugar de con XHTML y CSS. El enfoque de Qooxdoo permite a los programadores crear una 
+interfaz similar a la de un escritorio de un ordenador. Qooxdoo es un proyecto de software de código abierto independiente 
+de eyeOS, disponible en: qooxdoo.org[2]\\
+
+
+
+Es posible realizar pruebas sin hacer instalaciones [5]\\
+
+\subsection{Plataformas}
+Según la web oficial[3], es posible crear aplicaciones:
+\begin{enumerate}
+ \item web
+ \item moviles
+ \item de escritorio 
+ \item servidores
+\end{enumerate}
+
+
+
+
+[1] http://www.ecured.cu/index.php/Qooxdoo (hora de consulta 28-11-12 22:59)
+
+[2] http://www.eyeos.com/es/tecnologia/punto-de-vista-tecnico (hora de consulta 28-11-12 23:08)
+
+[3] http://qooxdoo.org/ (hora de consulta 28-11-12 23:14)
+
+[4] http://www.versioncero.com/noticia/202/qooxdoo (hora de consulta 28-11-12 23:24)
+
+[5] http://demo.qooxdoo.org/current/playground (hora de consulta 28-11-12 23:28)
+
+
+
+%Se deja hasta acá la investigación y se sigue con kendo (29-11-12 01:09)

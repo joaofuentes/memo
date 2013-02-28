@@ -21,6 +21,11 @@ Propuesta de solución nueva
 
 **SQL + PHP :**		- Herramientas más tradicionales, utilizando paradigma más común, es decir 
 			 una combinación de PostgreSQL/MySQL + PHP/Apache
+			- Base de comparación.
+			- Recientemente ha comenzado su declive [3]
 
 [1] http://zzarbi.tumblr.com/post/16870870471/php-nodejs-mysql-and-mongo (hora de consulta 28-02-2013 15:29)
 [2] https://github.com/hermanjunge/herman-mongoose-tutorial (hora de consulta 28-02-2013 15:50)
+[3] http://alex.corcoles.net/2012/06/what-if-php-y-mysql-nunca-hubieran-existido/ (hora de consulta 28-02-2013 16:44)
+
+

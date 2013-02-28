@@ -3,4 +3,9 @@ prototípo, pensando en las soluciones "nueva y tradicional"
 
 Propuesta de solución nueva
 
-**MongoDB +  Nodejs:**  - Herramientas que rompen paradigmas comunes,
+**MongoDB +  Nodejs:**	- Herramientas que rompen paradigmas comunes (BD NoSQL y uso de JS Client/Server)
+			- Según pruebas y resultados realizados en [1] el manejo de la esta combinación
+			  es mucho más rápido y estable, que por ejemplo algo más tradicional como
+			  SQL y PHP/Apache.
+
+[1] http://zzarbi.tumblr.com/post/16870870471/php-nodejs-mysql-and-mongo (hora de consulta 28-02-2013 15:29)

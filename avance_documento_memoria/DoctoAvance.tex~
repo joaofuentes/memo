@@ -1,0 +1,74 @@
+
+%BUSCAR ALGUN TEMPLATE PARA LA MEMORIA 
+\documentclass[letter, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage[top=3cm,bottom=3cm,left=3.5cm,right=3.5cm,footskip=1.5cm,headheight=1.5cm,headsep=.5cm,textheight=3cm]{geometry}
+
+
+
+\begin{document}
+\title{Evaluación de tecnologías Emergentes para el desarrollo de aplicaciones web }
+\author{Jo\~ao Fuentes Pacheco, Raúl Monge}
+\date{\today}
+\maketitle
+
+\newpage
+%Agradecimientos
+\input{include/agradecimientos}
+
+%Resumen
+\input{include/resumen}
+
+
+
+%Introducción
+%	Contexto
+%	Motivación
+%		Definición de problema
+%		Definir la importancia de realizar dicha evaluación
+%	Objetivos
+%	Metodologìa de la solución
+%	Estructura del documento
+\input{include/introduccion}
+
+%Estado del arte
+
+%	Hablar de las metodologías de desarrollo.
+\input{include/metodologias}
+%	Hablar de la evolución de las aplicaciones web (paper de avance)
+\input{include/historia}
+%	Investigación que permite la elección de las tecnologías (hasta ahora php(apache) ror/django(node))
+
+% Criterio de seleccion
+\input{include/criterio}
+
+%Evaluación
+%	Preparación de ambiente de desarrollo
+%	Posibles errores y como solucionarlos
+\input{include/evaluacion}
+
+%Pruebas
+%	Definición de tipo de pruebas
+%	Definir cómo se harán las pruebas
+\input{include/pruebas}
+
+%Resultados
+\input{include/resultados}
+
+%Conclusión	
+\input{include/conclusion}
+
+\input{include/bibliografia}
+
+%Anexos
+%	Instalaciones, Hola Mundo, problemas y soluciones  de herramiemntas que no se vieron a fondo (informe)
+
+\makeindex 
+\newpage
+
+
+\end{document}

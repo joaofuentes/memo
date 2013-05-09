@@ -1,0 +1,155 @@
+\chapter{Capítulo 1}
+\section{Introducción}
+
+\subsection{Contexto}
+
+La aparición de aplicaciones y sitios Web ha resultado en la creación y explotación de nuevos 
+mercados conformados por servicios con los que antes sólo se podía soñar, algunos ejemplos son: sitios de 
+comercio electrónico, el \textit{E-learning} \footnote{El E-learning es un modelo de formación a distancia 
+que utiliza Internet como herramienta de aprendizaje.Este modelo permite al alumno realizar el curso desde 
+cualquier parte del mundo y a cualquier hora.Con un ordenador y una conexión a Internet, el alumno realiza 
+las actividades interactivas planteadas, accede a toda la información necesaria para adquirir el conocimiento, 
+recibe ayuda del profesor; se comunica con su tutor y sus compañeros, o evalúa su progreso.[1]}, redes sociales, 
+incluyendo sus múltiples servicios de mensajería, juegos online y actualización de contenido en tiempo real; 
+sitios de \textit{streaming} \footnote{El término streaming hace alusión a una corriente continua, en este caso, de datos.
+Streaming corresponde a  la distribución de contenido multimedia a través de una red (generalmente internet)
+de tal forma que el usuario consume el producto al mismo tiempo que se va descargando (por ejemplo Youtube). 
+Este tipo de tecnología funciona mediante un búfer de datos que va almacenando el contenido descargado para 
+luego mostrarse al usuario; a diferencia de la descarga de archivos, que requiere que el usuario descargue los 
+archivos por completo para poder acceder a ellos.},tan sólo por nombrar algunas [12]\footnote{Página 1}. Esto 
+conlleva a un importante crecimiento y evolución tanto de la metodología desarrollo como de las tecnologías 
+utilizadas a la hora de crear una aplicación web.\\
+
+
+El sitio Web es el medio más barato para darse a conocer rápidamente con un alcance mundial. 
+Esto es extensible no sólo a empresas que comercializan productos y servicios, o a profesionales 
+autónomos, sino que también a personas u organizaciones que actúan sin ánimo de lucro, que intentan
+divulgar sus obras, inquietudes o ideas.\\
+
+Al comienzo, los sitios Web ofrecían casi de forma exclusiva contenidos basados en texto 
+y eran bastante estáticos; en la actualidad son sitios interactivos con abundancia de elementos multimedia.\\
+
+
+Como se sabe, la evolución tecnológica se hace presente en todas y cada una de las áreas de investigación, 
+tanto en las ciencias de la física y química que permiten la construcción de hardware más potente, como en 
+los procesos y tecnologías de desarrollo de software, específicamente, y lo que es de interés para este documento, 
+las tecnologías de Desarrollo Web.\\
+
+%\subsection{Motivación}
+
+\subsection{Definición del Problema}
+
+Hoy en día las herramientas Web son fundamentales en todo ámbito de negocios, desde soluciones comerciales
+como carritos de compra, catálogos empresariales, e incluso complejos sistemas \textit{Enterprise Resource
+Planning} o ERP por sus siglas en inglés, que consisten en una arquitectura de software para empresas que 
+facilita e integra la información entre las funciones de manufactura,logística, finanzas y recursos humanos 
+de la empresa.\\
+
+Como se mencionó anteriormente, a la evolución de los servicios ofrecidos por las diversas empresas qwue pertencen
+al rubro, hay que sumar el continuo aporte y empoderamiento de los propios usuarios quienes crean y consumen
+contenido a tasas cada vez más altas.\\
+
+Como ya ha ocurrido con la evolución desde páginas web estáticas a sitios web dinámicos, o la aparación de tecnologías
+asincrónicas, es natural esperar que esta evolución continue, después de todo la web evoluciona de acuerdo a las 
+necesidades del usuario.\\
+
+Es fundamental reconocer y probar las nuevas tecnologías que han ido apareciendo con el transcurrir de los años,
+de ese modo, poder evaluar de forma concreta y objetiva, en que contexto son de utilidad.\\
+
+
+\subsection{Objetivos}
+
+\subsubsection{Objetivos Generales}
+%separar en general y especifico (preguntarle al profe)!!!
+
+El objetivo de esta memoria es realizar una evaluación de diversas tecnologías emergentes de desarrollo web
+y compararlas versus una implementación de carácter tradicional bajo ciertos criterios. Para ello se deben cumplir 
+los siguientes objetivos generales:
+
+\begin{enumerate}
+ \item Explicar y profundizar sobre la
+\end{enumerate}
+
+
+\subsubsection{Objetivos Específicos}
+\begin{enumerate}
+ \item Investigar tecnologías existentes y emergentes para el desarrollo de aplicaciones web.
+ \begin{enumerate}
+   \item  Revisar evolución histórica de las tecnologías asociadas a desarrollo de aplicaciones Web.
+   \item  Realizar un levantamiento del estado del arte.
+ \end{enumerate}
+ \item Investigar y evaluar cómo las tecnologías recientes pueden ayudar a desarrollar mejores aplicaciones 
+	Web y  mejorar los procesos de desarrollo de software.
+ \begin{enumerate}
+   \item Definir criterios de clasificación general y selección de las tecnologías específicas a investigar
+   \item Aplicar los criterios anteriores para seleccionar un conjunto de tecnologías a investigar en mayor profundidad.
+   \item Evaluar en más detalle las tecnologías seleccionadas.
+ \end{enumerate}
+ \item Definir una aplicación de prueba y desarrollar un prototipo aplicando las tecnologías seleccionadas que permita 
+	entender, integrar y evaluar estas tecnologías. Comparar con la aplicación de tecnologías más tradicionales.
+ \begin{enumerate}
+   \item Diseñar y desarrollar el prototipo aplicando diferentes tecnologías.
+   \item Evaluar cada uno de los casos de aplicación
+ \end{enumerate}
+ \item Definir el tipo pruebas que midan rendimiento y como se aplicarán a los prototipos. 
+ \item Hacer una evaluación global y obtener conclusiones.
+\end{enumerate}
+
+
+\subsection{Metodología de la solución}
+ 
+El desarrollo de este trabajo se divide en etapas, las cuales son:
+\begin{enumerate}
+ \item Definición de Objetivos y Estado del Arte: Esta etapa consiste en la definición de los Objetivos Generales 
+ y Específicos de esta memoria, se investiga la evolución histórica de las diversas tecnologías de desarrollo web, 
+ y se realiza un levantamiento del estado del arte algunas de las metodologías más importantes de desarrollo web.
+ 
+ \item Selección de Tecnologías y Ambiente de Desarrollo: Esta etapa consiste en la definición y
+ aplicación de criterios de selección que permitan filtrar y escoger de entre las tecnologías investigadas en la etapa 
+ anterior. Por otra parte costa de la implementación de un ambiente de desarrollo necesario para realizar las diversas 
+ pruebas requeridas en los objetivos. Dicha implementación es necesaria para cada tecnología escogida.
+ 
+ \item Definición de pruebas y Experimentos: Esta etapa consiste en la definición las pruebas orientadas a medir el 
+ rendimiento de los prototipos construidos. Una vez definidas, se procederá a correr los experimentos en los prototipos, 
+ midiendo su desempeño.
+ 
+ \item Analisis y Resultados: En esta etapa se analizarán y compararán los resultados obtenidos en la etapa anterior,
+ explicando cada uno de ellos.
+ 
+ \item Conclusiones: La última etapa consta de la obtención de conclusiones del trabajo realizado, tomando
+ en cuenta todas las etapas anteriores.
+\end{enumerate}
+
+\subsection{Estructura del documento}
+
+En el capítulo 1 del presente documento se realiza una descripción del problema, contextualizando 
+al lector y motivandolo con las consecuencias de su resolución. Además se presentan los objetivos 
+que busca cumplir esta memoria.\\
+
+En el capítulo 2 se define que es una aplicación web, y se explican los procesos de desarrollo de 
+software necesarios para poder construirla; comenzando por los procesos de desarrollo de software 
+en general, los cuales son los precursores de los procesos de desarrollo web.\\
+%llenar
+%agregar kanban?
+
+En el capítulo 3 se realiza una revisión sobre la evolución histórica de las tecnologías web.
+Se explican las características y las tecnologías utilizadas más populares en su época.\\
+%llenar
+% agregar ror y django de todos modos
+
+En el capítulo 4 se definen los criterios de selección bajo los cuales se escogerán las tecnologías a 
+usar en el prototipo, ampliando la investigación de las tecnologías seleccionadas.\\
+%php apache// express(js) nodejs // django y ror quedan en espera por ahora.
+
+En el capítulo 5  se definen las pruebas y experimentos a realizar utilizando las tecnologías seleccionadas, 
+se describe la preparación de los ambientes de desarrollo necesarios para poder realizar dichas pruebas y
+se deja en manifiesto cualquier posible problema y su respectiva solución a la hora de preparar el
+ambiente de desarrollo.\\
+
+En el capítulo 6 se ejecutan las pruebas, se reunen, analizan y comparan los resultados obtenidos.\\
+
+El capítulo 7  está dedicado a las conclusiones obtenidas en esta memoria. Se responderá a los
+objetivos planteados en el capítulo 1.\\
+
+
+\newpage

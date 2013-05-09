@@ -1,0 +1,97 @@
+\chapter{Capítulo 4}
+
+\section{Criterio de Selección}
+
+El criterio de selección de tecnologías a utilizar, es un punto de importancia no menor en 
+el desarrollo de esta memoria, pués consta de la combinación de una serie de herramientas que, 
+dependiendo de cuáles y cómo se combinen, puede repercutir de manera positiva o negativa, el 
+rendimiento del sistema y por lo tanto los resultados de las pruebas a realizar.\\
+
+Para simplificar la tarea, se ha divido la selección en 2 items:
+\begin{enumerate}
+ \item Tecnologías tradicionales.
+ \item Tecnologías emergentes.
+\end{enumerate}
+
+Dentro de cada item se utiliza la siguiente subdivisión:
+\begin{itemize}
+ \item Gestor de Base de Datos.
+ \item Servidor Web.
+ \item Lenguaje de programación Web y uso de Framework.
+\end{itemize}
+
+
+
+\subsection{Tecnologías Tradicionales}
+
+Para la combinación de tecnologías tradicionales se utilizará:
+\begin{itemize}
+ \item Gestor de Base de Datos SQL
+ \item Servidor Web Apache
+ \item Lenguaje de Programación PHP y Framework Symfony \footnote{http://symfony.com/}
+\end{itemize}
+
+La razón de esta elección es debido a la gran popularidad, conviertiendose en practicamente una
+combinación estándar durante la web 2.0. \\
+
+La razón de utilizar una combinación de carácter más tradicional, es la de tener una base 
+de comparación respecto a las tecnologías relativamente recientes, y de acuerdo a los
+posibles resultados de las pruebas a realizar, determinar si las diferencias en cuanto a 
+rendimiento son lo suficientemente altas (o bajas), para justificar tener (o no tener) que 
+migrar sistemas y aplicaciones completas.\\
+%buscar algún gráfico
+%Explicar el porque
+
+\subsection{Tecnologías Emergentes}
+
+Para la combinación de tecnologías emergentes se utilizará:
+
+\begin{itemize}
+ \item Gestor de Base de Datos SQL
+ \item Servidor Web Nodejs
+ \item Lenguaje de Programación Javascript y Framework Express \footnote{http://expressjs.com/}
+\end{itemize}
+
+%Explicar el porque de la elección.
+La razón para elegir esta combinación, radica principalmente en el hecho de poder utilizar
+un lenguaje único, tanto para el servidor web como para desarrollar la aplicación web en sí.\\
+
+
+
+%agregar al menos una combinacion más, con django y/o RoR
+
+
+%porque nodejs
+\subsubsection{¿Por qué Nodejs?}
+
+Nodejs consiste en un framework de Javascript basado en el motor V8.\\
+
+La meta número uno declarada de Node es \textit{proporcionar una manera fácil para construir 
+programas de red escalables}. ¿Cuál es el problema con los programas de servidor actuales? 
+En lenguajes como Java y PHP, cada conexión genera un nuevo \textit{thread} que potencialmente viene 
+acompañado de 2 MB de memoria. En un sistema que tiene 8 GB de RAM, esto da un número máximo teórico 
+de conexiones concurrentes de cerca de 4.000 usuarios.\\
+
+Bajo el supuesto de que el impacto de una empresa ficticia es tal que crece la base de clientes, se desea 
+que la aplicación soporte más y más usuarios, por lo tanto es necesario agregar más y más servidores.
+Lo que representa una suma en cuanto a costos de servidor, tráfico, y por lo tanto potenciales
+problemas técnicos: un usuario puede estar usando diferentes servidores para cada solicitud, así que cualquier 
+recurso compartido debe almacenarse en todos los servidores. Por todas estas razones, el cuello de botella en 
+toda la arquitectura de aplicación Web (incluyendo el rendimiento del tráfico, la velocidad de procesador y la 
+velocidad de memoria) corresponde al número máximo de conexiones concurrentes que puede manejar un servidor.\\
+
+Node resuelve este problema cambiando la forma en que se realiza una conexión con el servidor. En lugar de 
+generar un nuevo hilo de SO\footnote{Sistema Operativo} para cada conexión y de asignarle la memoria necesaria, 
+cada conexión dispara una ejecución de evento dentro del proceso del motor de Node.\\
+
+Está basado en la máquina virtual de javascript de google conocida como v8 para interpretar el código 
+javascript. Una importante característica es que puede levantar servidores web en casi cualquier puerto que se 
+le indique y generar llamadas tipo comet, osea que son conexiones persistentes que se comportan como sockets y 
+que hacen posible la comunicación única bidirideccional entre el cliente y el servidor.[4]
+
+\subsubsection{¿Por qué SQL en lugar de NoSQL?}
+%Parrafo que explique el uso de sql
+No se utiliza un gestor de Base de Datos NoSQL, ya que el objetivo es medir el comportamiento de
+la combinación de servidor web y lenguaje de programación, medir cómo manejan los accesos a la base 
+de datos en igualdad de condiciones.\\
+\newpage

@@ -1,0 +1,12 @@
+\frame{
+	\frametitle{Avances 1/2}
+	\begin{itemize}
+		\item Definición de objetivos generales y específicos.
+		\item Criterio de clasificación general de estudio (tecnologías emergentes vs tecnología tradicional)
+		\item Avance en el estado del arte y uso de template adecuado para el escrito.
+		\item Revisión histórica de las tecnologías web y su evolución de acuerdo a criterios conversados con el profesor
+		      guía.
+		\item Revisión de metodologías de desarrollo de software y desarrollo de aplicaciones web.
+		\item Elección de arquitectura de prototipo para pruebas (3 capas)
+	\end{itemize}
+}

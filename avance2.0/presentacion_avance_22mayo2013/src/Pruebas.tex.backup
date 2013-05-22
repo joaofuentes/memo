@@ -1,0 +1,16 @@
+\frame{
+	\frametitle{Pruebas}
+	\begin{itemize}
+		\item ¿Qué medir?: 
+		\begin{itemize}
+		 \item Número de usuarios concurrentes en una aplicación web.
+		 \item Tiempo de ejecución para procesar peticiones concurrentes y nivel de error.
+		 \item Tiempos de acceso y de respuesta al servidor web y al motor de base de datos.
+		 \item Velocidad de desarrollo (Parametro de carácter subjetivo)
+		\end{itemize}
+ 
+		\item Análisis bibliográfico.
+		\item Estudio inicial acerca de los procesos de desarrollo de software.
+		\item Estudio inicial acerca de la evolución histórica de las tecnologías web.
+	\end{itemize}
+}

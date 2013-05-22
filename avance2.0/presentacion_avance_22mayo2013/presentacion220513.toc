@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.06pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Avances hasta la fecha}{3}{0}{1}
+\beamer@sectionintoc {2}{Pruebas}{5}{0}{2}
+\beamer@sectionintoc {3}{Dudas}{7}{0}{3}

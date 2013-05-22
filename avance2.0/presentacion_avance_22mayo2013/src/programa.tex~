@@ -1,0 +1,16 @@
+\frame{
+	\frametitle{Programa de Trabajo 1/2}
+
+	Para el desarrollo de esta Memoria de titulación se cuenta como unidad de tiempo la semana, siendo la semana $0$, el momento de
+	la inscripción de la memoria. Aclarado esto es posible definir 
+  \begin{itemize}
+ \item Investigación de las tecnologías, tanto existentes como emergentes para el desarrollo de aplicaciones web (2 semanas)
+ \item Investigación y evaluación acerca de cómo éstas pueden ayudar a desarrollar mejores aplicaciones web y 
+	mejorar los procesos de desarrollo de software. (2 semanas)
+ \item Definición de criterios que permitan realizar una clasificación general y una selección de aquellas 
+	tecnologías específicas a investigar.(2 semanas)
+
+ \end{itemize}
+ 
+	
+}

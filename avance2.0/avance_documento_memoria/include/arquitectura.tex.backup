@@ -1,7 +1,38 @@
 \section{Arquitectura}
 
 %explicar en parrafo pequeño que es una arquitectura de software
-\textit{agregar parrafo introductorio}\\
+%\textit{agregar parrafo introductorio}\\
+Una arquitectura de software corresponde a un patrón de referencia que brinda
+un marco necesario para guiar la construcción de software y establece la estrucutura de 
+funcionamiento  e interacción entre sus diversas partes [20]. Este concepto 
+"se refiere a la estructuración del sistema que, idealamente, se crea en las etapas 
+tempranas de desarrollo"[21].\\ 
+
+Al crear un software (independientemente de la metodología que se utilice), es necesario
+cumplir una serie de pasos  que preceden a su construcción:
+\begin{itemize}
+ \item Requerimientos: Se enfoca a la captura y priorización de necesidades a satisfacer,
+  ya sean de calidad, rendimiento y/o reestrictivas. Estos requerimientos son preponderantes
+  e influencia la desición acerca de que arquitectura a utilizar.
+ \item Diseño: Corresponde a la fase central en relación con la arquitectura. Debe satisfacer todos
+  los requerimientos y no solo utilizar tecnologías de moda.
+ \item Documentación: La documentación un factor crucial para comunicar un diseño de forma exitosa.
+  Generalemente se utiliza la representación de varias de sus estructuras mediante el uso vistas. 
+  Una vista generalmente contiene un diagrama, además de información adicional, que apoya en la 
+  comprensión de dicho diagrama.
+ \item Evaluación: Es de suma importancia evaluar el diseño una vez que este ha sido documentado 
+  con el fin de identificar posibles problemas y riesgos. Evaluar (y validar) el diseño antes
+  de codificar, disminuye el costo de corrección de errores.
+\end{itemize}
+
+
+Los grandes objetivos de una arquitectura de software son :
+\begin{enumerate}
+ \item Servir como guía durante el proceso de desarrollo. 
+ \item Definir y satisfacer los atributos de calidad. 
+\end{enumerate}
+  
+
 %explicar pq es necesario definir una arquitectura
 Como dice Danny Thorpe:
 \begin{center}
@@ -10,22 +41,64 @@ Como dice Danny Thorpe:
 \end{center}
 La importancia de contar con una buena arquitectura que se adecue a situaciones reales, donde 
 las diversas herramientas serán probadas. Es por ello que la arquitectura debe ser la respuesta 
-ante un problema, no una imposición.\\
+ante un problema, no una imposición. Por otra parte, el desarrollo de software dejó de ser, hace mucho
+tiempo, el trabajo de una o dos personas, pasando a ser equipos; por tanto es necesario facilitar la
+comunicación entre sus integrantes.\\
+
+A la hora de diseñar un software, hay que tener en cuenta que la arquitectura a utilizar se 
+describe utilizando varios tipos de modelos[22]:
+\begin{itemize}
+ \item Estructurales: Se centran en la estructura coherente del sistema completo, en lugar de centrarse 
+  en su composición. Representan todo como una colección organizada de componentes. 
+ \item Frameworks: Identifican patrones de diseño repetibles, los cuales se pueden encontrar en aplicaciones
+  similares.
+ \item Dinámicos: Se centran en los aspectos del comportamiento dinámico de la arquitectura,  indicando
+  como la estructura o la configuración del sistema puede cambiar en función de eventos externos.
+ \item De Procesos: Se enfocan en el diseño de los procesos del negocio que el sistema debe soportar.
+\end{itemize}
+
+Dependiendo de la situación, se debe tomar la desición de que tipo de arquitectura utilizar.\\
+
+
+
+Algunos elementos de una arquitectura son:
+\begin{itemize}
+ \item Cliente y Servidor
+ \item Base de Datos
+ \item Componentes
+ \item Sistemas de Nivel Jerárquico
+\end{itemize}
+
+De entre las diversas arquitecturas, algunas de las más relevantes son:
+\begin{itemize}
+ \item Cliente-Servidor
+ \item Orientado a Servicios
+ \item Modelo de N-Capas
+ \item Modelo Vista Controlador
+\end{itemize}
+\textit{Pregntar al profe si es necesario explicar cada uno}
 
 Considerando el hecho de que uno de los objetivos de esta memoria es, realizar pruebas y obtener
 resultados concretos acerca de diversas herramientas de desarrollo web, es necesario enmarcar
 dichas pruebas bajo un estándar que asegure una base pareja para todas ellas.\\
 
-Es por dicha razón que se utilizará una arquitectura basada en 3 capas:
+Es por dicha razón que se utilizará una arquitectura basada en 3 capas, de tipo \textbf{estructural} y 
+\textbf{framework}.\\
+
+\subsection{Arquitectura de 3 capas}
+Una arquitectura bastante popular y de carácter relativamente simple, es la de 3 capas, cuyo
+objetivo primordial es la separación de la aplicación en [23]:
+
+\textit{Crear y agregar una imagen (con su respectiva explicación)}\\
+
 \begin{enumerate}
- \item Una capa de presentación, que es lo que muestra el navegador web.
+ \item Una capa de presentación: Corresponde a la capa que ve el usuario, es decir, presenta 
+  el sistema al usuario. Se responsabiliza de que se le comunique información al usuario por 
+  parte del sistema y viceversa. La tarea de capturar información sobre el usuario se realiza,
+  por lo general a través de formularios. Esta capa se comunica exclusiamente con la capa lógica.
  \item Una capa lógica (conocida también como de negocios), que contiene la aplicación web en sí.
  \item Una capa de datos, que permite la comunicación entre el dispositivo de almacenamiento.
 \end{enumerate}
-
-\textit{Crear y agregar una imagen (con su respectiva explicación}\\
-
-Se utilizará esta arquitectura, pués es bastante popular y de carácter relativamente simple.
 %Uso de arquitectura 3-tier
   %explicar de que se trata y pq se usa
   %hacer el diagrama 

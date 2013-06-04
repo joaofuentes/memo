@@ -2,6 +2,7 @@
 
 
 \section{Tecnologías utilizadas en el Desarrollo de aplicaciones Web}
+
 \subsection{Un poco de historia}
 Antiguamente, la creación de un sitió web se limitaba sólo  a escribir cada 
 página directamente con mediante código HTML. Esta tarea es factible solamente
@@ -273,24 +274,29 @@ Dentro de las tecnología utilizadas en esta web se encuentran:
   orientadas a objetos y de esta manera es como se procesa la información.
  
  \item Kendo \footnote{http://www.kendoui.com/}: Bajo el lema “El arte del desarrollo web” Kendo UI 
- ofrece un completo abanico de posibilidades, siendo un Framework para la creación dinámica de mo-dernas 
- interfaces se vale de las virtudes de HTML5, CSS3 y jQuery para generar potentes elementos perfectamente 
- compatibles con los navegadores más modernos como también para los dispositivos móviles más utilizados 
- en la actualidad [15]. La compatibilidad de Kendo UI es uno de sus puntos fuertes, ya sea con modernos 
- navegadores o sistemas operativos móviles:
- \begin{enumerate}
-  \item Internet Explorer 7+
-  \item Firefox 3+
-  \item Safari 4+
-  \item Chrome
-  \item Opera 10+
-  \item Android 2.0+
-  \item iOS 3.0+
-  \item BlackBerry OS 6.0+
-  \item webOS 2.2+
- \end{enumerate}
+  ofrece un completo abanico de posibilidades, siendo un Framework para la creación dinámica de mo-dernas 
+  interfaces se vale de las virtudes de HTML5, CSS3 y jQuery para generar potentes elementos perfectamente 
+  compatibles con los navegadores más modernos como también para los dispositivos móviles más utilizados 
+  en la actualidad [15]. La compatibilidad de Kendo UI es uno de sus puntos fuertes, ya sea con modernos 
+  navegadores o sistemas operativos móviles:
+  \begin{enumerate}
+   \item Internet Explorer 7+
+   \item Firefox 3+
+   \item Safari 4+
+   \item Chrome
+   \item Opera 10+
+   \item Android 2.0+
+   \item iOS 3.0+
+   \item BlackBerry OS 6.0+
+   \item webOS 2.2+
+  \end{enumerate}
  
- 
+ \item Django \footnote{https://www.djangoproject.com/} (Python): Django es un framework web basado en Python,
+  cuya meta es un ''desarrollo rápido, limpio y con un diseño pragmático''. De acuerdo a la información
+  otorgada por su web, está creado para lidear con los plazos muy ajustados de una sala de noticias y los
+  requisitos 
+
+ \item Ruby on Rails \footnote{http://rubyonrails.org/} (Ruby):
 \end{itemize}
 
  

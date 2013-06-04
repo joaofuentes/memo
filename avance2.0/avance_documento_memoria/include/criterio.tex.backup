@@ -26,21 +26,41 @@ Dentro de cada item se utiliza la siguiente subdivisión:
 
 Para la combinación de tecnologías tradicionales se utilizará:
 \begin{itemize}
- \item Gestor de Base de Datos SQL
+ \item Gestor de Base de Datos MySQL 5.5
  \item Servidor Web Apache
- \item Lenguaje de Programación PHP y Framework Symfony \footnote{http://symfony.com/}
+ \item Lenguaje de Programación PHP y Framework Symfony2\footnote{http://symfony.com/} o CakePHP2\footnote{http://cakephp.org/}
 \end{itemize}
 
-La razón de esta elección es debido a la gran popularidad, conviertiendose en practicamente una
-combinación estándar durante la web 2.0. \\
+Esta elección está basaba en la gran popularidad que duró más de una decada, conviertiendose 
+en practicamente una combinación estándar durante la web 2.0. \\
 
-La razón de utilizar una combinación de carácter más tradicional, es la de tener una base 
-de comparación respecto a las tecnologías relativamente recientes, y de acuerdo a los
-posibles resultados de las pruebas a realizar, determinar si las diferencias en cuanto a 
-rendimiento son lo suficientemente altas (o bajas), para justificar tener (o no tener) que 
+La razón de utilizar una combinación de carácter relativamente\footnote{Si bien el servidor, y el lenguaje 
+de programación son tradicionales, se utilizan versiones actualizadas, tanto de motor de base de datos y de 
+frameworks.} más tradicional, es la de tener una base de comparación respecto a las tecnologías relativamente 
+recientes, y de acuerdo a los posibles resultados de las pruebas a realizar, determinar si las diferencias 
+en cuanto a rendimiento son lo suficientemente altas (o bajas), para justificar tener (o no tener) que 
 migrar sistemas y aplicaciones completas.\\
+
+
+\subsubsection{Por qué PHP}
+\textit{Buscar más información, mas orientada al rendimiento.}
+
 %buscar algún gráfico
 %Explicar el porque
+
+\subsubsection{¿Symfony2 o CakePHP2?}
+
+La cantidad de frameworks que existen para PHP es bastante grande, es por ello que su elección no es un
+tema sencillo de resolver.\\
+
+Si bien en un princio, la elección tomó en cuenta más de dos variables, la desición se acotó a los más
+populares dentro de la web. Sin embargo, no hay consenso en los foros y ambos reciben tanto críticas como 
+puntos a favor, por parte de los usuarios.\\
+
+Es por ello que se realizará una instalación de ambos y se correran ciertas pruebas preliminares, para eliminar
+todo rastro de dudas.
+
+\textit{Buscar más información}
 
 \subsection{Tecnologías Emergentes}
 
@@ -57,8 +77,6 @@ La razón para elegir esta combinación, radica principalmente en el hecho de po
 un lenguaje único, tanto para el servidor web como para desarrollar la aplicación web en sí.\\
 
 
-
-%agregar al menos una combinacion más, con django y/o RoR
 
 
 %porque nodejs
@@ -84,10 +102,31 @@ Node resuelve este problema cambiando la forma en que se realiza una conexión c
 generar un nuevo hilo de SO\footnote{Sistema Operativo} para cada conexión y de asignarle la memoria necesaria, 
 cada conexión dispara una ejecución de evento dentro del proceso del motor de Node.\\
 
-Está basado en la máquina virtual de javascript de google conocida como v8 para interpretar el código 
-javascript. Una importante característica es que puede levantar servidores web en casi cualquier puerto que se 
-le indique y generar llamadas tipo comet, osea que son conexiones persistentes que se comportan como sockets y 
-que hacen posible la comunicación única bidirideccional entre el cliente y el servidor.[4]
+Corre en la máquina virtual de javascript de google conocida como v8 y se basa en el paradigma
+de programación dirigido a eventos de entrada y salida asincrónica.\\
+%agregar imagen
+%\includegraphics[]{×}
+
+Una importante característica es que puede levantar servidores web en casi cualquier puerto que se 
+le indique, además de posibilitar la comunicación única bidirideccional entre el cliente y el servidor[4],
+mediante el uso de sockets o bien llamadas de tipo comet [19] \footnote{Una llamada de tipo comet 
+permite a un servidor web enviar información al navegador web si que este se lo pida explicitamente.}.
+
+%http://book.mixu.net/ch13.html
+
+De la misma forma que ocurre al trabajar con Apache, es posible expandir la funcionalidad de Node 
+instalando módulos. Los módulos que se pueden utilizar con Node mejoran en gran medida el producto.
+Así de importantes se han tornado los módulos, hasta el punto de convertirse en parte esencial del 
+producto completo [10]. Los módulos se instalan usando Node Package Manager.\\
+
+En lo que a plataformas se refiere y de acuerdo a la página oficial [17], están habilitadas las 
+descargas para:
+\begin{itemize}
+ \item Windows
+ \item Mac OS X
+ \item Linux
+ \item SunOS
+\end{itemize}
 
 \subsubsection{¿Por qué SQL en lugar de NoSQL?}
 %Parrafo que explique el uso de sql
@@ -95,3 +134,6 @@ No se utiliza un gestor de Base de Datos NoSQL, ya que el objetivo es medir el c
 la combinación de servidor web y lenguaje de programación, medir cómo manejan los accesos a la base 
 de datos en igualdad de condiciones.\\
 \newpage
+
+
+%agregar al menos una combinacion más, con django y/o RoR

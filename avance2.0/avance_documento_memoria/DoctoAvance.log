@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.6)  4 JUN 2013 17:01
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.6)  4 JUN 2013 17:56
 entering extended mode
  %&-line parsing enabled.
 **DoctoAvance.tex
@@ -700,57 +700,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--42
+Underfull \hbox (badness 10000) in paragraph at lines 37--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--84
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--92
+Underfull \hbox (badness 10000) in paragraph at lines 93--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 99--106
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 97--101
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--113
+Underfull \hbox (badness 10000) in paragraph at lines 111--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
 
  []
 
-[26]) (./include/evaluacion.tex [27]) (./include/pruebas.tex [28])
-(./include/resultados.tex [29]) (./include/conclusion.tex [30])
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--149
+
+ []
+
+[26] [27]) (./include/evaluacion.tex [28]) (./include/pruebas.tex [29])
+(./include/resultados.tex [30]) (./include/conclusion.tex [31])
 (./include/bibliografia.tex
 Overfull \hbox (12.22597pt too wide) in paragraph at lines 4--5
 []\OT1/cmr/m/n/10.95 [1]http://www.imh.es/elearning-es/que-es-elearning ho-ra d
@@ -805,7 +810,7 @@ Overfull \hbox (0.91098pt too wide) in paragraph at lines 76--72
 res-capas-introduccion/
  []
 
-[31] [32] (./DoctoAvance.aux) ) 
+[32] [33] (./DoctoAvance.aux) ) 
 Here is how much of TeX's memory you used:
  2466 strings out of 256216
  29148 string characters out of 1917073
@@ -821,9 +826,9 @@ pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts
 1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/s
 hare/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesk
 y/cm/cmti10.pfb>
-Output written on DoctoAvance.pdf (32 pages, 153402 bytes).
+Output written on DoctoAvance.pdf (33 pages, 155117 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -45,7 +45,6 @@ migrar sistemas y aplicaciones completas.\\
 \subsubsection{Por qué PHP}
 \textit{Buscar más información, mas orientada al rendimiento.}
 
-%buscar algún gráfico
 %Explicar el porque
 
 \subsubsection{¿Symfony2 o CakePHP2?}
@@ -58,7 +57,13 @@ populares dentro de la web. Sin embargo, no hay consenso en los foros y ambos re
 puntos a favor, por parte de los usuarios.\\
 
 Es por ello que se realizará una instalación de ambos y se correran ciertas pruebas preliminares, para eliminar
-todo rastro de dudas.
+todo rastro de dudas. No obstante, a continuación  se expondrá información de ambos:
+
+\begin{itemize}
+ \item Symfony: %llenar
+ \item CakePHP: %llenar
+\end{itemize}
+
 
 \textit{Buscar más información}
 
@@ -127,6 +132,13 @@ descargas para:
  \item Linux
  \item SunOS
 \end{itemize}
+
+
+\subsubsection{La eterna lucha entre Django y Rails}
+
+Similar a lo que ocurre con los frameworks para PHP, es lo que acontece con Django y Rails, a pesar
+de que ambos no comparten un lenguaje en común (Python y Ruby respectivamente)
+
 
 \subsubsection{¿Por qué SQL en lugar de NoSQL?}
 %Parrafo que explique el uso de sql

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.6)  4 JUN 2013 17:56
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.6)  14 JUN 2013 15:20
 entering extended mode
  %&-line parsing enabled.
 **DoctoAvance.tex
@@ -705,56 +705,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--43
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
+Underfull \hbox (badness 10000) in paragraph at lines 92--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--106
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
+Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--127
+Underfull \hbox (badness 10000) in paragraph at lines 122--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
-[26] [27]) (./include/evaluacion.tex [28]) (./include/pruebas.tex [29])
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
+
+ []
+
+[27]) (./include/evaluacion.tex [28]) (./include/pruebas.tex [29])
 (./include/resultados.tex [30]) (./include/conclusion.tex [31])
 (./include/bibliografia.tex
 Overfull \hbox (12.22597pt too wide) in paragraph at lines 4--5
@@ -826,7 +831,7 @@ pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts
 1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/s
 hare/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesk
 y/cm/cmti10.pfb>
-Output written on DoctoAvance.pdf (33 pages, 155117 bytes).
+Output written on DoctoAvance.pdf (33 pages, 155536 bytes).
 PDF statistics:
  144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

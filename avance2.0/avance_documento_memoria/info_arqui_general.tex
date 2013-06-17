@@ -396,3 +396,47 @@ y la lógica de control en tres componentes distintos. El patrón MVC se ve frec
 página HTML y el código que provee de datos dinámicos a la página, el modelo es el Sistema de Gestión de Base de Datos y la Lógica de 
 negocio y el controlador es el responsable de recibir los eventos de entrada desde la vista
 
+La finalidad del modelo es mejorar la reusabilidad por medio del desacople entre la vista y el modelo. Los elementos del patrón son
+los siguientes:
+
+El modelo es el responsable de:
+
+    Acceder a la capa de almacenamiento de datos. Lo ideal es que el modelo sea independiente del sistema de almacenamiento.
+    Define las reglas de negocio (la funcionalidad del sistema). Un ejemplo de regla puede ser: “Si la mercancía pedida no está en 
+    el almacén, consultar el tiempo de entrega estándar del proveedor”.
+    Lleva un registro de las vistas y controladores del sistema.
+    Si estamos ante un modelo activo, notificará a las vistas los cambios que en los datos pueda producir un agente externo (por 
+    ejemplo, un fichero bath que actualiza los datos, un temporizador que desencadena una inserción, etc).
+
+El controlador es el responsable de:
+
+    Recibe los eventos de entrada (un clic, un cambio en un campo de texto, etc.).
+    Contiene reglas de gestión de eventos, del tipo “SI Evento Z, entonces Acción W”. Estas acciones pueden suponer peticiones al 
+    modelo o a las vistas. Una de estas peticiones a las vistas puede ser una llamada al método “Actualizar()”. Una petición al modelo 
+    puede ser “Obtener_tiempo_de_entrega( nueva_orden_de_venta )”.
+
+Las vistas son responsables de:
+
+    Recibir datos del modelo y los muestra al usuario.
+    Tienen un registro de su controlador asociado (normalmente porque además lo instancia).
+    Pueden dar el servicio de “Actualización()”, para que sea invocado por el controlador o por el modelo (cuando es un modelo activo que 
+    informa de los cambios en los datos producidos por otros agentes).
+
+¿Qué Ventajas trae utilizar el MVC?
+
+    Es posible tener diferentes vistas para un mismo modelo (eg. representación de un conjunto de datos como una tabla o como un diagrama 
+    de barras).
+    Es posible construir nuevas vistas sin necesidad de modificar el modelo subyacente.
+    Proporciona un mecanismo de configuración a componentes complejos muchos más tratable que el puramente basado en eventos (el modelo 
+    puede verse como una representación estructurada del estado de la interacción).
+    
+
+Flujo que sigue el control en una implementación general de un MVC
+
+Aunque se pueden encontrar diferentes implementaciones de MVC, el flujo que sigue el control generalmente es el siguiente:
+
+    El usuario interactúa con la interfaz de usuario de alguna forma (por ejemplo, el usuario pulsa un botón, enlace)
+    El controlador recibe (por parte de los objetos de la interfaz-vista) la notificación de la acción solicitada por el usuario. El controlador gestiona el evento que llega, frecuentemente a través de un gestor de eventos (handler) o callback.
+    El controlador accede al modelo, actualizándolo, posiblemente modificándolo de forma adecuada a la acción solicitada por el usuario (por ejemplo, el controlador actualiza el carro de la compra del usuario). Los controladores complejos están a menudo estructurados usando un patrón de comando que encapsula las acciones y simplifica su extensión.
+    El controlador delega a los objetos de la vista la tarea de desplegar la interfaz de usuario. La vista obtiene sus datos del modelo para generar la interfaz apropiada para el usuario donde se refleja los cambios en el modelo (por ejemplo, produce un listado del contenido del carro de la compra
+    La interfaz de usuario espera nuevas interacciones del usuario, comenzando el ciclo nuevamente.

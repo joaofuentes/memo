@@ -71,12 +71,65 @@ Algunos elementos de una arquitectura son:
 
 De entre las diversas arquitecturas, algunas de las más relevantes son:
 \begin{itemize}
- \item Cliente-Servidor
- \item Orientado a Servicios
- \item Modelo de N-Capas
+ \item Orientada a Servicios
  \item Modelo Vista Controlador
+ \item Cliente-Servidor
+ \item Modelo de N-Capas
 \end{itemize}
-\textit{Pregntar al profe si es necesario explicar cada uno}
+%\textit{Pregntar al profe si es necesario explicar cada uno} basta con explicar y adjuntar diagrama
+
+\subsection{Arquitectura Orientada a Servicios}
+
+Es una arquitectura de software que permite la creación y/o cambios de los procesos de negocio desde la perspectiva 
+de tecnologías de la información de forma ágil, a través de la composición de nuevos procesos utilizando las funcionalidades 
+de negocio que están contenidas en la infraestructura de aplicaciones actuales, utilizando protocolos estándar e interfaces 
+convencionales \footnote{usualmente Web Services} para facilitar el acceso a la lógica de negocios y la información entre diversos 
+servicios[27].\\
+
+Por lo general, en una empresa coexisten un sin número de aplicaciones, lo que conlleva a una serie de inconvenientes que aumentan el 
+el tiempo y esfuerzo en que se responde a un requerimiento en particular.\\
+
+Uno de los principales inconvenientes, es que, ante aplicaciones desarrolladas en lenguajes diferentes, no se pueda acceder desde una
+a otra para consultar un dato en particular[24].\\
+
+\textit{agregar imagen}\\
+
+Mediante la aplicación de la Arquitectura Orientada a Servicios (SOA)\footnote{Service Oriented Architecture, por sus siglas en inglés} 
+pretende solucionar los problemas antes mencionados. Dentro de la arquitectura SOA la funcionalidad se implementa en pequeños componentes 
+autónomos reutilizables denominados servicios.\\
+
+SOA no es software o un lenguaje de programación, sino un marco de trabajo conceptual que permite a organizaciones unir los
+objetivos de negocio con su infraestructura de tecnologías de información, integrando los datos y la lógica de negocio de sus 
+sistemas separados.[25]\\
+
+La necesidad de tal marco se deriva de la evolución del software de negocio. Antes, los desarrollos de aplicaciones de negocio se 
+concentraban en necesidades específicas: contabilidad, compras, planillas de sueldos. Cada aplicación se desarrollaba sin considerar a 
+otros sistemas dentro de la empresa, pues las aplicaciones (de pequeña escala), se caracterizaban por ser auto suficientes; el cambio 
+más grande es filosófico, ya que, en lugar de pensar en el diseño de aplicaciones individuales para resolver problemas especificos, 
+SOA ve el software como un patrón que soporta todo el proceso del negocio. Cada elemento de un servicio es un componente que puede 
+ser utilizado muchas veces a través de muchas funciones y procesos dentro y fuera de la empresa\\
+
+La idea detrás de todo esto es que es más efectivo trabajar con servicios que con aplicaciones.\\
+
+SOA define las siguientes capas de software [26]:
+%revisar y cruzar la info con mas fuentes, ej [27]
+\begin{itemize}
+ \item Aplicaciones básicas, sistemas desarrollados bajo cualquier arquitectura o tecnología, geográficamente dispersos y bajo 
+  cualquier figura de propiedad.
+ \item Exposición de funcionalidades, donde las funcionalidades de la capa aplicativas son expuestas en forma de servicios (webservices).
+ %REVISAR LA 2DA
+ \item Integración de servicios que facilita el intercambio de datos entre elementos de la capa aplicativa orientada a procesos 
+  empresariales internos o en colaboración;
+\end{itemize}
+    de composición de procesos, que define el proceso en términos del negocio y sus necesidades, y que varia en función del negocio;
+    de entrega, donde los servicios son desplegados a los usuarios finales.
+\subsection{Arquitectura Modelo Vista Controlador}
+
+\subsection{Arquitectura Cliente-Servidor}
+
+\subsection{Arquitectura N-Capas}
+
+\subsubsection{Arquitectura 3-Capas}
 
 Considerando el hecho de que uno de los objetivos de esta memoria es, realizar pruebas y obtener
 resultados concretos acerca de diversas herramientas de desarrollo web, es necesario enmarcar
@@ -96,9 +149,21 @@ objetivo primordial es la separación de la aplicación en [23]:
   el sistema al usuario. Se responsabiliza de que se le comunique información al usuario por 
   parte del sistema y viceversa. La tarea de capturar información sobre el usuario se realiza,
   por lo general a través de formularios. Esta capa se comunica exclusiamente con la capa lógica.
- \item Una capa lógica (conocida también como de negocios), que contiene la aplicación web en sí.
- \item Una capa de datos, que permite la comunicación entre el dispositivo de almacenamiento.
+  
+ \item Una capa lógica/de negocios: Es la encargada de recibir, procesar y responder las peticiones
+  que recibe, tanto del usuario a través de la capa de presentación, como las de la Base de Datos mediante
+  la capa de datos. En otras palabras es una capa intermedia.
+ 
+ \item Una capa de datos: Es la encargada acceder a los datos y está formada por un (o más) gestor de 
+  base de datos. Dicho gestor recibe las peticiones de almacenamiento, recuperación, actualización y/o 
+  eliminación de datos; desde la capa lógica. 
 \end{enumerate}
+
+Basicamente el objetivo principal es separar las distintas lógicas de la aplicación en niveles y que
+éstos posean estructuras bien planteadas.\\
+
+Para el caso de esta memoria, las pruebas se centrarán en la capa lógica y de presentación. Dejando
+la capa de datos como una constante.
 %Uso de arquitectura 3-tier
   %explicar de que se trata y pq se usa
   %hacer el diagrama 

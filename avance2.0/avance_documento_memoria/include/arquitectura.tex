@@ -71,15 +71,103 @@ Algunos elementos de una arquitectura son:
 
 De entre las diversas arquitecturas, algunas de las más relevantes son:
 \begin{itemize}
- \item Cliente-Servidor
- \item Orientado a Servicios
+ \item Orientada a Servicios
  \item Modelo Vista Controlador
+ \item Cliente-Servidor
  \item Modelo de N-Capas
 \end{itemize}
 %\textit{Pregntar al profe si es necesario explicar cada uno} basta con explicar y adjuntar diagrama
 
+\subsection{Arquitectura Orientada a Servicios}
+
+Es una arquitectura de software que permite la creación y/o cambios de los procesos de negocio desde la perspectiva 
+de tecnologías de la información de forma ágil, a través de la composición de nuevos procesos utilizando las funcionalidades 
+de negocio que están contenidas en la infraestructura de aplicaciones actuales, utilizando protocolos estándar e interfaces 
+convencionales \footnote{usualmente Web Services} para facilitar el acceso a la lógica de negocios y la información entre diversos 
+servicios[27].\\
+
+Por lo general, en una empresa coexisten un sin número de aplicaciones, lo que conlleva a una serie de inconvenientes que aumentan el 
+el tiempo y esfuerzo en que se responde a un requerimiento en particular.\\
+
+Uno de los principales inconvenientes, es que, ante aplicaciones desarrolladas en lenguajes diferentes, no se pueda acceder desde una
+a otra para consultar un dato en particular[24].\\
+
+\textit{agregar imagen}\\
+
+Mediante la aplicación de la Arquitectura Orientada a Servicios (SOA)\footnote{Service Oriented Architecture, por sus siglas en inglés} 
+pretende solucionar los problemas antes mencionados. Dentro de la arquitectura SOA la funcionalidad se implementa en pequeños componentes 
+autónomos reutilizables denominados servicios.\\
+
+SOA no es software o un lenguaje de programación, sino un marco de trabajo conceptual que permite a organizaciones unir los
+objetivos de negocio con su infraestructura de tecnologías de información, integrando los datos y la lógica de negocio de sus 
+sistemas separados.[25]\\
+
+La necesidad de tal marco se deriva de la evolución del software de negocio. Antes, los desarrollos de aplicaciones de negocio se 
+concentraban en necesidades específicas: contabilidad, compras, planillas de sueldos. Cada aplicación se desarrollaba sin considerar a 
+otros sistemas dentro de la empresa, pues las aplicaciones (de pequeña escala), se caracterizaban por ser auto suficientes; el cambio 
+más grande es filosófico, ya que, en lugar de pensar en el diseño de aplicaciones individuales para resolver problemas especificos, 
+SOA ve el software como un patrón que soporta todo el proceso del negocio. Cada elemento de un servicio es un componente que puede 
+ser utilizado muchas veces a través de muchas funciones y procesos dentro y fuera de la empresa\\
+
+La idea detrás de todo esto es que es más efectivo trabajar con servicios que con aplicaciones.\\
+
+SOA define las siguientes capas de software [26]:
+%revisar y cruzar la info con mas fuentes, ej [27]
+\begin{itemize}
+ \item Aplicaciones básicas, sistemas desarrollados bajo cualquier arquitectura o tecnología, geográficamente dispersos y bajo 
+  cualquier figura de propiedad.
+ \item Exposición de funcionalidades, donde las funcionalidades de la capa aplicativas son expuestas en forma de servicios (webservices).
+ %REVISAR LA 2DA
+ \item Integración de servicios que facilita el intercambio de datos entre elementos de la capa aplicativa orientada a procesos 
+  empresariales internos o en colaboración;
+ \item Composición de procesos, que define el proceso en términos del negocio y sus necesidades, y que varia en función del negocio;
+ \item Entrega, donde los servicios son desplegados a los usuarios finales.
+\end{itemize}
+
+\subsubsection{Principios  SOA}
+
+Algunos principios de esta arquitectura son [28][29]:
+%RE REDACTAR ESTA PARTE
+\begin{itemize}
+ \item Los Servicios deben ser reusables: Todo servicio debe ser diseñado y construido pensando en su reutilización dentro de la misma 
+  aplicación, dentro del dominio de aplicaciones de la empresa o incluso dentro del dominio público para su uso masivo.
+ \item Los Servicios deben proporcionar un contrato formal: Todo servicio desarrollado, debe proporcionar un contrato en el cual figuren: 
+    el nombre del servicio, su forma de acceso, las funcionales que ofrece, los datos de entrada de cada una de las funcionalidades y 
+    los datos de salida. De esta manera, todo consumidor del servicio, accederá a este mediante el contrato, logrando así la independencia 
+    entre el consumidor y la implementación del propio servicio.
+   
+   \item Los Servicios deben tener bajo acoplamiento: Es decir, que los servicios tienen que ser independientes los unos de los otros. Para 
+    lograr ese bajo acoplamiento, lo que se hará es que cada vez que se vaya a ejecutar un servicio, se accederá a él a través del contrato, 
+    logrando así la independencia entre el servicio que se va a ejecutar y el que lo llama. De esta manera serán totalmente reutilizables.
+
+   \item Los Servicios deben permitir la composición: Todo servicio debe ser construido de tal manera que pueda ser utilizado para construir 
+    servicios genéricos de más alto nivel, el cual estará compuesto de servicios de más bajo nivel. En el caso de los Servicios Web, esto 
+    se logrará mediante el uso de los protocolos para orquestación(WS-BPEL) y coreografía (WS-CDL).
+
+   \item Los Servicios deben de ser autónomos: Todo Servicio debe tener su propio entorno de ejecución. De esta manera el servicio es totalmente 
+    independiente y nos podemos asegurar que así podrá ser reutilizable desde el punto de vista de la plataforma de ejecución.
+
+    \item Los Servicios no deben tener estado: Un servicio no debe guardar ningún tipo de información. Esto es así porque una aplicación está 
+    formada por un conjunto de servicios, lo que implica que si un servicio almacena algún tipo de información, se pueden producir 
+    problemas de inconsistencia de datos. La solución, es que un servicio sólo contenga lógica, y que toda información esté almacenada 
+    en algún sistema de información sea del tipo que sea.
+
+    \item Los Servicios deben poder ser descubiertos: Todo servicio debe poder ser descubierto de alguna forma para que pueda ser utilizado, 
+    consiguiendo así evitar la creación accidental de servicios que proporcionen las mismas funcionalidades. En el caso de los Servicios 
+    Web, el descubrimiento se logrará publicando los interfaces de los servicios en registros UDDI.
+\end{itemize}
 
 
+
+
+
+\subsection{Arquitectura Modelo Vista Controlador}
+
+\subsection{Arquitectura Cliente-Servidor}
+
+\subsection{Arquitectura N-Capas}
+
+\subsubsection{Arquitectura 3-Capas}
 
 Considerando el hecho de que uno de los objetivos de esta memoria es, realizar pruebas y obtener
 resultados concretos acerca de diversas herramientas de desarrollo web, es necesario enmarcar

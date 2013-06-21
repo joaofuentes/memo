@@ -1,7 +1,7 @@
 CLIENTE SERVIDOR
 
 http://bit.ly/16zWr6c (hora de consulta 13:32 17/06/2013)
-Con respecto a la definición de arquitectura cliente/servidor se encuentran las siguientes definiciones:
+Con respecto a la definición de arquitectura cliente/servidor se encuentran las siguientes:
 
     Cualquier combinación de sistemas que pueden colaborar entre si para dar a los usuarios toda la información que 
      ellos necesiten sin que tengan que saber donde esta ubicada.
@@ -436,7 +436,150 @@ Flujo que sigue el control en una implementación general de un MVC
 Aunque se pueden encontrar diferentes implementaciones de MVC, el flujo que sigue el control generalmente es el siguiente:
 
     El usuario interactúa con la interfaz de usuario de alguna forma (por ejemplo, el usuario pulsa un botón, enlace)
-    El controlador recibe (por parte de los objetos de la interfaz-vista) la notificación de la acción solicitada por el usuario. El controlador gestiona el evento que llega, frecuentemente a través de un gestor de eventos (handler) o callback.
-    El controlador accede al modelo, actualizándolo, posiblemente modificándolo de forma adecuada a la acción solicitada por el usuario (por ejemplo, el controlador actualiza el carro de la compra del usuario). Los controladores complejos están a menudo estructurados usando un patrón de comando que encapsula las acciones y simplifica su extensión.
-    El controlador delega a los objetos de la vista la tarea de desplegar la interfaz de usuario. La vista obtiene sus datos del modelo para generar la interfaz apropiada para el usuario donde se refleja los cambios en el modelo (por ejemplo, produce un listado del contenido del carro de la compra
+    El controlador recibe (por parte de los objetos de la interfaz-vista) la notificación de la acción solicitada por el usuario. 
+      El controlador gestiona el evento que llega, frecuentemente a través de un gestor de eventos (handler) o callback.
+    El controlador accede al modelo, actualizándolo, posiblemente modificándolo de forma adecuada a la acción solicitada por el usuario 
+      (por ejemplo, el controlador actualiza el carro de la compra del usuario). Los controladores complejos están a menudo estructurados 
+      usando un patrón de comando que encapsula las acciones y simplifica su extensión.
+    El controlador delega a los objetos de la vista la tarea de desplegar la interfaz de usuario. La vista obtiene sus datos del modelo 
+      para generar la interfaz apropiada para el usuario donde se refleja los cambios en el modelo (por ejemplo, produce un listado del 
+      contenido del carro de la compra
     La interfaz de usuario espera nuevas interacciones del usuario, comenzando el ciclo nuevamente.
+
+ -----------------------------------------------------------------------------------------------------------------------------------------
+ 
+ http://bit.ly/11SffcC (hora de consulta 12:44 21/06/2013)
+ 
+ El patrón de arquitectura MVC (Modelo Vista Controlador) es un patrón que define la organización independiente del Modelo (Objetos de 
+ Negocio), la Vista (interfaz con el usuario u otro sistema) y el Controlador (controlador del workflow de la aplicación).
+ 
+ El patrón de arquitectura "modelo vista controlador", es una filosofía de diseño de aplicaciones, compuesta por:
+
+Modelo
+    Contiene el núcleo de la funcionalidad (dominio) de la aplicación. 
+    Encapsula el estado de la aplicación. 
+    No sabe nada / independiente del Controlador y la Vista. 
+Vista
+    Es la presentación del Modelo. 
+    Puede acceder al Modelo pero nunca cambiar su estado. 
+    Puede ser notificada cuando hay un cambio de estado en el Modelo. 
+Controlador
+    Reacciona a la petición del Cliente, ejecutando la acción adecuada y creando el modelo pertinente 
+    
+============================================================================================================================================
+============================================================================================================================================
+
+N CAPAS - N NIVELES
+
+http://bit.ly/14njijm  (hora de consulta 13:12 21/06/2013)
+
+
+Lo que se conoce como arquitectura en capas es en realidad un estilo de programación donde el objetivo principal es separar los diferentes 
+aspectos del desarrollo, tales como las cuestiones de presentación, lógica de negocio, mecanismos de almacenamiento...
+
+Muchos de nosotros debemos recordar que desde la aparición de los motores de base de datos existen dos "niveles" perfectamente definidos. 
+Quiero resaltar el uso del término "nivel" y no el de "capa" porque no significan lo mismo. El término capa se utiliza para referenciar a 
+las distintas "partes" en que una aplicación se dividide desde un punto de vista lógico; mientras que "nivel" corresponde a la forma física
+en que se organiza una aplicación.
+
+Ahora consideremos el ejemplo de un componente que permita grabar los programas de televisión emitidos. Este componente tiene un sistema de 
+almacenamiento, dado que hace falta "guardar" las instrucciones sobre el día y hora se desea grabar el programa en particular; obviamente 
+existe una porción de lógica de negocio, la que se refiere a los pasos necesarios para capturar el programa de televisión y grabarlo; 
+finalmente hay una interfáz de usuario que permite a las personas ver y editar las instrucciones de grabación.
+
+Podemos decir desde un punto de vista lógico que existen tres capas, y hasta que no veamos el código que escribió el desarrollador vamos
+a creer que es así.
+
+Lo que no se puede negar es que hay un único nivel, todo esta empotrado en algún componente de hardware dentro del equipo.
+
+Es importante destacar que hace falta separar el código de presentación del código de lógica de negocio, porque el fabricante puede 
+desarrollar este equipo para que muestre las instrucciones en un display del mismo equipo o utilizar el televisor; la cuestión es que 
+el código de presentación tiene que poder intercambiarse, lo cuál es una de las ventajas del desarrollo en capas.
+
+La necesidad de contar con porciones de la aplicación que se puedan "intercambiar" sin tener que modificar el resto de la aplicación es lo 
+que impulsa el desarrollo en capas; de este modo nos encontramos con el siguiente diagrama:
+
+(diagrama)
+
+Ahora tenemos 2 niveles y en el primero de ellos diferenciamos 2 capas, de esta manera estamos diciendo que la capa de presentación 
+interactua con la capa de lógica de negocion; Desde la filosofía de arquitectura en capas, esto significa que la capa de lógica de negocios 
+presenta una "interfaz" para brindar servicios a la capa de presentación.
+
+Del mismo modo, en el diagrama estamos diciendo que existe otro nivel donde se encuentra una capa encargada de los datos. Esta capa no se 
+muestra como un "paquete" o "ensamblado" dado que se trata (generalmente) de un motor de base de datos que puede o no ejecutarse en el mismo 
+equipo. Indudablemente esta capa también presenta una "interfaz" para brindar sus servicios a la capa que está por encima.
+
+Lo importante y que siempre debemos recordar es que las capas inferiores brindan servicios a las capas superiores (independientemente 
+del nivel en que se encuentren).
+
+La clave del desarrollo en capas es que una capa solamente debe utilizar lo que la "interfaz" de la o las capas inferiores le brindan, 
+de este modo se puden intercambiar las capas respetando la "interfaz", que viene a ser como un "contrato entre capas"
+
+Ahora escribiendo nuevo código podemos intercambiar la capa de presentación sin afectar el resto de la aplicación. El problema 
+se presenta cuando queremos intercambiar la Capa / Nivel de Datos, esto significa que necesitamos utilizar otro motor de base de datos y 
+resulta que los fabricantes de motores de bases de datos si bién respetan los estándares, incorporan características valiosas en 
+sus productos. Una aplicación que pretenda utilizar la "potencia" o características particulares de un motor de base de datos, 
+inevitablemetne incorporará en la Capa de Lógica de Negocios algo de código que no es compatible con otros motores de base de datos. 
+En consecuencia, cambiar la capa de datos significa corregir la capa de lógica de negocios.
+
+Las buenas prácticas de diseño y desarrollo indican que se debe trabajar sobre el siguiente diagrama:
+
+diagrama
+
+Ahora si tenemos las tan famosas 3 capas, pero hay que hacer un par de aclaraciones para que nadie se confunda.
+
+La nueva capa, se denomina Capa de Acceso a Datos (o Capa de Persistencia) que no es lo mismo que Capa de Datos.
+
+ 
+
+La capa de acceso a datos es una porción de código que justamente realiza el acceso a los datos. De esta manera cuando es necesario 
+cambiar el motor de base de datos, solamente tendremos que corregir esa capa.
+
+ 
+
+Mientras que la capa de datos (en el nivel de datos) es donde están los datos y se corresponde directamente con la definición de 
+esquemas, tablas, vistas, procedimientos almacenadaos y todo lo que se pueda o deba poner en un motor de base de datos. 
+
+(NOTA: al complicarse la apliacion, es necesario modularizar mas)
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+http://bit.ly/19b7cAm (hora de consulta 14:28 21/06/2013)
+
+La programación por capas es una arquitectura cliente-servidor en el que el objetivo primordial es la separación de la lógica de negocios de 
+la lógica de diseño; un ejemplo básico de esto consiste en separar la capa de datos de la capa de presentación al usuario.
+
+La ventaja principal de este estilo es que el desarrollo se puede llevar a cabo en varios niveles y, en caso de que sobrevenga algún 
+cambio, sólo se ataca al nivel requerido sin tener que revisar entre código mezclado. 
+Además, permite distribuir el trabajo de creación de una aplicación por niveles; de este modo, cada grupo de trabajo está totalmente 
+abstraído del resto de niveles
+
+En el diseño de sistemas informáticos actual se suelen usar las arquitecturas multinivel o Programación por capas. En dichas arquitecturas 
+a cada nivel se le confía una misión simple, lo que permite el diseño de arquitecturas escalables (que pueden ampliarse con facilidad en 
+caso de que las necesidades aumenten).
+
+El diseño más utilizado actualmente es el diseño en tres niveles (o en tres capas).
+
+Capas y niveles
+
+1. Capa de presentación: es la que ve el usuario (también se la denomina "capa de usuario"), presenta el sistema al usuario, le comunica 
+la información y captura la información del usuario en un mínimo de proceso (realiza un filtrado previo para comprobar que no hay errores 
+de formato). También es conocida como interfaz gráfica 
+2. Capa de negocio: es donde residen los programas que se ejecutan, se reciben las peticiones del usuario y se envían las respuestas tras 
+el proceso. Se denomina capa de negocio (e incluso de lógica del negocio) porque es aquí donde se establecen todas las reglas que deben 
+cumplirse. Esta capa se comunica con la capa de presentación, para recibir las solicitudes y presentar los resultados, y con la capa de 
+datos, para solicitar al gestor de base de datos almacenar o recuperar datos de él. También se consideran aquí los programas de aplicación.
+3. Capa de datos: es donde residen los datos y es la encargada de acceder a los mismos. Está formada por uno o más gestores de bases de 
+datos que realizan todo el almacenamiento de datos, reciben solicitudes de almacenamiento o recuperación de información desde la capa de 
+negocio.
+NOTA: Ojo con la diferencia entre la capa de datos y la capa de acceso a datos (explicada en la info extraida anteriormente)
+
+Ejemplo de que capa != nivel
+
+A. Una solución de tres capas (presentación, lógica del negocio, datos) que residen en una solo computadora (Presentación+lógica+datos). 
+Se dice que la arquitectura de la solución es de tres capas y un nivel.
+
+B. Una solución de tres capas (presentación, lógica del negocio, datos) que residen en dos computadores (presentación+lógica por un 
+lado; lógica+datos por el otro lado). Se dice que la arquitectura de la solución es de tres capas y dos niveles. 
+
+

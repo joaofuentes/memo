@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.6)  21 JUN 2013 17:06
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.5.6)  13 AUG 2013 16:34
 entering extended mode
  %&-line parsing enabled.
 **DoctoAvance.tex
@@ -710,26 +710,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 172--175
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+Underfull \hbox (badness 10000) in paragraph at lines 172--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-[25]) (./include/criterio.tex
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--304
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 347--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
+
+ []
+
+[29]) (./include/criterio.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
@@ -749,58 +804,214 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
-[26]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--97
+Overfull \hbox (47.23561pt too wide) in paragraph at lines 73--75
+[]\OT1/cmr/m/n/10.95 En http://bakery.cakephp.org/articles/view/4cb4609b-1154-4
+fc8-8275-49e1d13e7814/lang:spa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--105
-
- []
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 102--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
+Underfull \hbox (badness 10000) in paragraph at lines 108--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
 
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 150--153
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--124
 
  []
 
-[29]) (./include/evaluacion.tex [30]) (./include/pruebas.tex [31])
-(./include/resultados.tex [32]) (./include/conclusion.tex [33])
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--136
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
+
+ []
+
+[33]) (./include/evaluacion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+ []
+
+
+Overfull \hbox (2.1306pt too wide) in paragraph at lines 24--25
+[]\OT1/cmr/m/n/10.95 Ejecutar el script de che-queo pa-ra ver si est^^Sa to-do 
+en or-den php app/check.php 
+ []
+
+[34] [35] [36]
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 +------+-----------+------------------------------------
+-------+[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 | user | host      | password                           
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 +------+-----------+------------------------------------
+-------+[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 | root | localhost |                                    
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 | root | tarrito   |                                    
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 | root | 127.0.0.1 |                                    
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 | root | ::1       |                                    
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 |      | localhost |                                    
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 |      | tarrito   |                                    
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 162--162
+ []\OT1/cmtt/m/n/10.95 +------+-----------+------------------------------------
+-------+[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 +------+-----------+------------------------------------
+-------+[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 | user | host      | password                           
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 +------+-----------+------------------------------------
+-------+[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 | root | localhost | *7C65DFE6EA91038267275D4DB8D9C16DAF
+CBD3F8 |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 | root | tarrito   | *7C65DFE6EA91038267275D4DB8D9C16DAF
+CBD3F8 |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 | root | 127.0.0.1 | *7C65DFE6EA91038267275D4DB8D9C16DAF
+CBD3F8 |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 | root | ::1       |                                    
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 |      | localhost |                                    
+       |[] 
+ []
+
+[37]
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 |      | tarrito   |                                    
+       |[] 
+ []
+
+
+Overfull \hbox (4.25539pt too wide) in paragraph at lines 188--188
+ []\OT1/cmtt/m/n/10.95 +------+-----------+------------------------------------
+-------+[] 
+ []
+
+[38]) (./include/pruebas.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--9
+
+ []
+
+[39]) (./include/resultados.tex [40]) (./include/conclusion.tex [41])
 (./include/bibliografia.tex
 Overfull \hbox (12.22597pt too wide) in paragraph at lines 4--5
 []\OT1/cmr/m/n/10.95 [1]http://www.imh.es/elearning-es/que-es-elearning ho-ra d
@@ -855,25 +1066,49 @@ Overfull \hbox (0.91098pt too wide) in paragraph at lines 76--77
 res-capas-introduccion/
  []
 
-[34]) [35] (./DoctoAvance.aux) ) 
+[42]
+Overfull \hbox (5.1998pt too wide) in paragraph at lines 108--109
+[]\OT1/cmr/m/n/10.95 [39] htt-ps://docs.djangoproject.com/en/1.5/intro/tutorial
+01/ (ho-ra de con-sul-ta 17:04
+ []
+
+
+Overfull \hbox (17.4272pt too wide) in paragraph at lines 112--113
+[]\OT1/cmr/m/n/10.95 [41] http://stackoverflow.com/questions/11475794/permissio
+ns-issues-on-symfony2 (ho-
+ []
+
+
+Overfull \hbox (0.698pt too wide) in paragraph at lines 114--115
+[]\OT1/cmr/m/n/10.95 [42] http://www.dustinweber.com/main-page/php-web-framewor
+ks-cakephp-versus-
+ []
+
+
+Overfull \hbox (35.95111pt too wide) in paragraph at lines 118--119
+[]\OT1/cmr/m/n/10.95 [44] http://vschart.com/compare/cakephp/vs/symfony (ho-ra 
+de con-sul-ta 14:34 14/06/2013) 
+ []
+
+) [43] (./DoctoAvance.aux) ) 
 Here is how much of TeX's memory you used:
- 2466 strings out of 256216
- 29148 string characters out of 1917073
- 96484 words of memory out of 1500000
- 5691 multiletter control sequences out of 10000+200000
- 13906 words of font info for 53 fonts, out of 1200000 for 2000
+ 2469 strings out of 256216
+ 29187 string characters out of 1917073
+ 97484 words of memory out of 1500000
+ 5693 multiletter control sequences out of 10000+200000
+ 14074 words of font info for 54 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 27i,8n,25p,236b,285s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10
-.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/font
-s/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb
-></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/typ
-e1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/
-share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/blues
-ky/cm/cmti10.pfb>
-Output written on DoctoAvance.pdf (35 pages, 162748 bytes).
+ 27i,8n,25p,236b,423s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb
+></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/b
+luesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/shar
+e/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/c
+m/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb>
+Output written on DoctoAvance.pdf (43 pages, 196464 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 182 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

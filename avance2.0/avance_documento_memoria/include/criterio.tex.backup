@@ -64,7 +64,14 @@ todo rastro de dudas. No obstante, a continuación  se expondrá información de
  \item CakePHP: %llenar
 \end{itemize}
 
+En [42] hay una buena comparativa (del 2007), en la que a grandes rasgos se concluye que:\\
+%cake es mas facil de instalar, pero symfony puede que tenga mejor performance 
+En [43] hay una cmparativa entre cake 2.1.3, symfony 2.1.2 y Yii, en el que cake supera a symfony (usando siege)\\
 
+En [44] hay info entre ambos framworks (vschart), una especie de wiki.\\
+
+En http://bakery.cakephp.org/articles/view/4cb4609b-1154-4fc8-8275-49e1d13e7814/lang:spa (hora de consulta 1604 13-08-2013)
+se habla de una prueba en la que ambos son relati
 \textit{Buscar más información}
 
 \subsection{Tecnologías Emergentes}
@@ -134,12 +141,17 @@ descargas para:
 \end{itemize}
 
 
-\subsubsection{La eterna lucha entre Django y Rails}
+\subsubsection{La lucha entre Django y Rails}
 
 Similar a lo que ocurre con los frameworks para PHP, es lo que acontece con Django y Rails, a pesar
-de que ambos no comparten un lenguaje en común (Python y Ruby respectivamente)
+de que ambos no comparten un lenguaje en común (Python y Ruby respectivamente).\\
 
+Esta pregunta es, relamente, Python vs Ruby y
 
+ this is really a Python vs Ruby question, not Django vs Rails. And, as can be gathered from the other answers 
+ to this question, there is no clear winner. Both are good, modern, well-designed, flexible, good for your
+ productivity (unlike PHP which fails on all these counts). So choosing between the two really boils down to
+ a fit between your personality/preferences and the language strengths.
 \subsubsection{¿Por qué SQL en lugar de NoSQL?}
 %Parrafo que explique el uso de sql
 No se utiliza un gestor de Base de Datos NoSQL, ya que el objetivo es medir el comportamiento de

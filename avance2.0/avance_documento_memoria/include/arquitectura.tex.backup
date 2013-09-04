@@ -120,13 +120,222 @@ SOA define las siguientes capas de software [26]:
  %REVISAR LA 2DA
  \item Integración de servicios que facilita el intercambio de datos entre elementos de la capa aplicativa orientada a procesos 
   empresariales internos o en colaboración;
+ \item Composición de procesos, que define el proceso en términos del negocio y sus necesidades, y que varia en función del negocio;
+ \item Entrega, donde los servicios son desplegados a los usuarios finales.
 \end{itemize}
-    de composición de procesos, que define el proceso en términos del negocio y sus necesidades, y que varia en función del negocio;
-    de entrega, donde los servicios son desplegados a los usuarios finales.
-\subsection{Arquitectura Modelo Vista Controlador}
+
+\subsubsection{Principios  SOA}
+
+Algunos principios importantes de esta arquitectura son [28][29]:
+%RE REDACTAR ESTA PARTE
+\begin{itemize}
+ \item \textbf{Deben ser reusables}: Los servicios deben ser diseñados y construidos pensando en su reutilización dentro de la misma 
+    aplicación, dentro del dominio de aplicaciones de la empresa o incluso dentro del dominio público para su uso masivo.
+    
+ \item \textbf{Deben proporcionar un contrato formal}: Los servicios desarrollados deben proporcionar un contrato en el cual figuren: 
+    el nombre del servicio, su forma de acceso, las funcionales que ofrece, los datos de entrada de cada una de las funcionalidades y 
+    los datos de salida. Así, los consumidores del servicio, accederán a través de las reglas establecidas por el contrato, logrando 
+    la independencia entre el consumidor y la implementación del propio servicio.
+    
+ \item \textbf{Deben tener bajo acoplamiento}: Los servicios tienen que ser independientes  unos de otros. Para lograrlo, es necesario que,
+    cada vez que se vaya a ejecutar un servicio, se accederá a él a través del contrato, logrando la independencia entre el servicio que se 
+    va a ejecutar y el que lo llama. De esta manera serán totalmente reutilizables.
+    
+ \item \textbf{Deben permitir la composición}: Los servicios deben ser construidos de tal manera que puedan ser utilizados para construir 
+    servicios genéricos de más alto nivel, el cual estará compuesto de servicios de más bajo nivel. Al trabajar con Servicios Web,  
+    se logra mediante el uso de los protocolos para orquestación \footnote{``En servicios Web, la orquestación se refiere a un conjunto de
+    actividades que conforman un proceso. Orquestación es la gestión, la organización de las interacciones que existen entre los servicios 
+    web de un proceso.''[30] } y coreografía \footnote{''La coreografía corresponde a la descripción y guía de un modelo global y define las
+    colaboraciones entre cualquier tipo de aplicaciones. Es un protocolo de negocio que dicta las reglas de interacción que deben ser
+    cumplidas por las entidades participantes.``[30]} .
+
+ \item textbf{Deben de ser autónomos}: Los servicios deben tener su propio entorno de ejecución. De esta manera el servicio es totalmente 
+    independiente y es posible asegurar que  podrá ser reutilizable desde el punto de vista de la plataforma de ejecución.
+
+ \item \textbf{No deben tener estado}: Los servicios no deben guardar ningún tipo de información. La razón de esto corresponde a que si
+    una aplicación está formada por un conjunto de servicios, y un servicio almacena algún tipo de información, es posible que se produzcan 
+    problemas de inconsistencia de datos. Es por ello que es necesario que servicio sólo contenga lógica, y que toda información esté 
+    almacenada en algún sistema de información sea del tipo que sea.
+
+ \item \textbf{Deben poder ser descubiertos}: Los servicios deben poder ser descubiertos de alguna forma para que puedan ser utilizados, 
+    para evitar la creación de multiples servicios que proporcionen las mismas funcionalidades. 
+    %En el caso de los Servicios Web, el descubrimiento se logrará publicando los interfaces de los servicios en registros UDDI.
+\end{itemize}
+
+
+
+\subsection{Arquitectura Modelo Vista Controlador (MVC)}
+
+Es un patrón de arquitectura de software que separa la lógica de negocio de la interfaz de usuario, facilitando la 
+evolución por separado de ambos aspectos e incrementa reutilización y flexibilidad [31].\\
+
+Su principal característica es que separa los datos de la aplicación, la interfaz de usuario, y la lógica de control en tres componentes 
+distintos. Es encontrado frecuentemente en aplicaciones web, donde la vista es la página HTML (que vé el usuario) y el código que provee 
+de datos dinámicos a la página; el modelo que corresponde  al sistema de gestión de base de datos y lógica de negocio; y el controlador 
+que es el responsable de recibir los eventos de entrada desde la vista.\\
+
+MVC fue introducido inicialmente en la comunidad de desarrolladores de Smalltalk-80 [32].\\
+
+%agregar más info
+
+\subsubsection{Componentes del MVC}
+
+\textit{agregar imagen MVC}
+
+Si bien, hay una gran cantidad de variaciones al modelo comúnmente conocido del patrón arqitectónico MVC,\\
+%sólo el interior de cada comoponente se vuelve más complejo. MEJORAR!!!
+
+La finalidad del modelo es mejorar la reusabilidad por medio del desacople entre la vista y el modelo. Los elementos de esta
+arquitectura son [33]:
+
+\begin{enumerate}
+ \item \textbf{El Modelo}: Encapsula los datos y las funcionalidades. Es responsable de:
+	\begin{itemize}
+	 \item Acceder a la capa de almacenamiento de datos.
+	 \item Definir las reglas de negocio, es decir, la funcionalidad del sistema.
+	 \item Llevar un registro, tanto de las vistas como de los controladores del sistema.
+	 %Agregar más de acuerdo a la busqueda bibliográfica
+	\end{itemize}
+       El modelo es independiente de cualquier representación de salida y/o comportamiento de entrada
+ 
+ \item \textbf{La Vista}: Muestra la información al usuario y pueden existir múltiples vistas del modelo. Es responsable de:
+	 \begin{itemize}
+	  \item Recibir los datos del modelo y mostrarlos al usuario.
+	  \item Tener un registro de su controlador asociado.
+	  \item Suministrar un servicio de “Actualización()”, para que sea invocado por el controlador o por el modelo.
+	 \end{itemize}
+       Cada vista tiene asociado un componente  controlador.
+       
+ \item \textbf{El Controlador}: Recibe las entradas, usualmente como eventos codificados. Es responsable de:
+	   \begin{itemize}
+	    \item Recibir los eventos de entrada, que por lo general son un click, un cambio dentro de un campo de texto, o el
+	          movimiento del ratón (entre otros).
+	    \item Contener reglas de gestión de eventos del tipo ''IF``, por ejemplo: ''IF evento X, THEN acción Y`` 
+	   \end{itemize}
+       Los eventos son traducidos a solicitudes de servicio ("service requests") para el modelo o la vista.
+\end{enumerate}
+
+\subsubsection{Flujo del MVC}
+
+El flujo que sigue el control generalmente es el siguiente [33], el cual puede cambiar dependiendo de la implementación del:
+
+\begin{enumerate}
+ \item El \textbf{usuario} interactúa con la interfaz de usuario, es decir la \textbf{vista}, a través de un evento: por ejemplo, 
+       el usuario hace click en un enlace).
+ 
+ \item El \textbf{controlador} recibe  a través de la \textbf{vista} la notificación de la acción solicitada por el \textbf{usuario}. 
+ 
+ \item El \textbf{controlador} gestiona el evento que llega a través de un gestor de eventos o callback (generalmente).
+ 
+ \item El \textbf{controlador} accede al \textbf{modelo}, y lo actualiza de forma adecuada a la acción solicitada por el \textbf{usuario}. 
+       Por ejemplo, el \textbf{controlador} actualiza el carrito de compras del \textbf{usuario}). 
+       
+ \item El \textbf{controlador} delega a la \textbf{vista} la tarea de desplegar la interfaz usuaria. La \textbf{vista} obtiene sus datos 
+      del \textbf{modelo} para generar la interfaz apropiada para el \textbf{usuario} donde se refleja los cambios en el \textbf{modelo}.
+      Por ejemplo, producir un listado del contenido del carrito de compras.
+ 
+ \item La interfaz usuaria (\textbf{vista}) espera nuevas interacciones del usuario, comenzando el ciclo nuevamente
+
+\end{enumerate}
+
+
 
 \subsection{Arquitectura Cliente-Servidor}
 
+%Agregar importancia de carga balanceada entre ambos
+IBM define al modelo Cliente-Servidor como[34][35][36]: 
+
+\begin{center}
+      \textit{''Es la tecnología que proporciona al usuario final el acceso transparente a las 
+     aplicaciones, datos, servicios de cómputo o cualquier otro recurso del grupo de trabajo y/o, a través de la organización, 
+     en múltiples plataformas. El modelo soporta un medio ambiente distribuido en el cual los requerimientos de servicio hechos 
+     por estaciones de trabajo inteligentes o "clientes'', resultan en un trabajo realizado por otros computadores llamados 
+     servidores``}.
+\end{center}
+
+Es una arquitectura distribuida que permite a los usuarios finales obtener acceso a la información de forma transparente aún en 
+entornos multiplataforma. Se trata de la arquitectura más extendida en la implementación de Sistemas Distribuidos[37].\\
+
+\textit{agregar una imagen de la arquitectura y del balanceo}\\
+
+%agregar info de funcionamiento en general
+Es un modelo para el desarrollo de sistemas de información en el que las operaiones se dividen en procesos independientes y cooperativos
+entre sí para intercambiar ya sea información, servicios o recursos. Se denomina cliente al proceso que inicia la ''conversación`` solicita 
+los recursos; y servidor al proceso que responde a dichas solicitudes [36].\\ 
+
+''En este modelo las aplicaciones se dividen de forma que el servidor contiene la parte que debe ser compartida por varios usuarios, y en el 
+cliente permanece sólo lo particular de cada usuario``\footnote{http://bit.ly/19mazo5 (hora de consulta 19:26 24/06/2013)} .\\
+
+
+\subsubsection{Cliente}
+
+Es el que inicia un requerimiento de servicio, formulando los requerimientos y pasandolos al servidor;  se lo conoce con el término 
+front-end. [34]. La ubicación de los datos o de las aplicaciones es totalmente transparente para el cliente.\\
+
+El cliente maneja, por lo general, todas las funciones que tienen que ver con la manipulación y visualización de datos, por ende están 
+desarrolladas sobre plataformas que permiten construir interfaces gráficas de usuario (GUI)\footnote{Graphical User Interface, por sus
+siglas en inglés.}\\
+
+Dentro de las tareas realizadas por el cliente, destacan[37]:
+\begin{itemize}
+ \item Administrar la GUI.
+ \item Interactuar con el usuario.
+ \item Procesar la lógica de la aplicación y, en algunos casos, hacer validaciones locales.
+ \item Generar requerimientos de bases de datos.
+ \item Recibir resultados del servidor y mostrarlos al cliente.
+\end{itemize}
+
+
+%Dependiendo del contexto de la aplicación y la funcionalidad del cliente, éste puede ser clasificado en:
+%investigar mas!
+%\begin{itemize}
+% \item \textbf{Basado en aplicación de usuario}: En caso de que los datos sean de baja interacción y esten fuertemente relacionados 
+%    con la actividad de los usuarios de esos clientes. 
+% \item \textbf{Basado en lógica de negocio}:  Toma datos suministrados por el usuario y/o la base de datos y efectúa los cálculos 
+%    necesarios según los requerimientos del usuario.
+%\end{itemize}
+
+
+\subsubsection{Servidor}
+
+Es una aplicación que ofrece un servicio a usuarios de Internet, el servidor es un programa que recibe una solicitud, realiza el 
+servicio requerido y devuelve los resultados en forma de una respuesta. Generalmente un servidor puede tratar múltiples peticiones 
+(múltiples clientes) al mismo tiempo.\\
+
+
+\subsubsection{Principios Cliente-Servidor}
+
+Algunas características de este tipo e arquitectura son[36][37]:
+\begin{itemize}
+ \item El servidor proporciona los servicios y el cliente los utiliza.
+ \item La única relación entre clientes y servidores es la que se establece a través del intercambio de mensajes. El mensaje es el 
+       mecanismo para la petición y entrega de solicitudes de servicio. 
+ \item El uso de recursos compartidos. Muchos clientes pueden usar los mismos servidores y, a través de ellos, comparten tanto recursos 
+       lógicos como físicos. Estos recursos son regulados por el servidor.
+ \item El cliente inicia las comunicaciones, el servidor espera de forma pasiva.
+ \item Los detalles de la implementación son invisibles para el cliente, es decir que existe encapsulamiento de servicios.
+ \item Transparencia de física y de localización, es decir que el cliente no sabe si el servidor está distribuido y/o su localización 
+       física.
+ \item Los programas y datos centralizados en servidores, facilitan tanto la integridad, como su mantenimiento.
+ \item Ambiente heterogéneo, tanto la plataforma de hardware, como el sistema operativo del cliente y del servidor no son necesariamente 
+       la misma. Esto representa una de las principales ventajas de esta arquitectura, permitiendo conectar clientes y servidores 
+       independientemente de sus plataformas. 
+\end{itemize}
+
+\subsubsection{Flujo de cliente servidor}
+
+Si bien pueden haber ciertas diferencas dependiendo de la implementación, el flujo  de funcionamiento de un sistema 
+Cliente/Servidor es [37]:
+
+\begin{enumerate}
+ \item El \textbf{cliente} solicita  información al \textbf{servidor}.
+ \item El \textbf{servidor} recibe la petición del \textbf{cliente}.
+ \item El \textbf{servidor} procesa dicha solicitud.
+ \item El \textbf{servidor} envía el resultado obtenido al \textbf{cliente}.
+ \item El \textbf{cliente} recibe el resultado y lo procesa.
+\end{enumerate}
+
+   
 \subsection{Arquitectura N-Capas}
 
 \subsubsection{Arquitectura 3-Capas}

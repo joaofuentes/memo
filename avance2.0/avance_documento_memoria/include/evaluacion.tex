@@ -1,8 +1,196 @@
 \section{Evaluación}
+%	Preparación de ambiente de desarrollo
+%	Posibles errores y como solucionarlos en los anexos mejor.
+
+En esta sección se analizará en profundidad, como se preparará el ambiente de desarrollo de cada herramienta elegida, ya sea 
+tradicional o emergente.\\
 
 \subsection{Tecnologías Tradicionales}
 
+%poner las pruebas preliminares en la parte de criterios? preguntarle al profe
+
+\subsubsection{Symfony}
+
+Consiste en un framework de PHP, orientado a desarrollo web. Los pasos para instalar y dejar funcional esta herramienta son:
+
+\begin{enumerate}
+ \item Descargar el archivo desde \textit{http://symfony.com/download}. Se recomienda bajar la última versión 
+       estable\footnote{Hasta la fecha es la versión 2.2.}.
+ \item Descomprimir el archivo una vez descargado.
+ \item Abrir una consola y posicionarse en la carpeta descomprimida.
+ \item Seguir las instrucciones del archivo README.md:
+ \begin{enumerate}
+  \item Ejecutar php composer.phar install. En caso de error ejecutar como root.
+  \item Ejecutar el script de chequeo para ver si está todo en orden php app/check.php
+  \item En caso de haber errores, consultar en la sección de anexos.
+  %php cli,php pdo php xml,
+  \item Actualizar el timezone en php.ini ubicado en /etc.
+ \end{enumerate}
+\end{enumerate}
+
+Para crear una aplicación de prueba:
+\begin{enumerate}
+ \item Seguir las instrucciones de la documentación en [40].
+ \item Es posible que se deba mover la carpeta que contenga a la aplicaciónde prueba a la ruta /var/html/www
+ \item En caso de error de estilo:
+ \begin{verbatim}
+  Change the permissions of the "app/cache/" directory 
+   so that the web server can write into it.
+  Change the permissions of the "app/logs/" directory 
+   so that the web server can write into it.
+ \end{verbatim}
+ Se puede solucionar mediante [41]:
+ \begin{verbatim}
+  rm -rf app/cache/*
+  rm -rf app/logs/* 
+  chmod 777 app/cache
+  chmod 777 app/logs
+ \end{verbatim}
+
+ Si bien hay soluciones que cuentan con un mayor nivel de seguridad, se escapan del alcance de esta memoria.
+
+\end{enumerate}
+
+
+\subsubsection{CakePHP}
+
+Consiste en un framework de PHP, orientado a desarrollo web. Los pasos para instalar y dejar funcional esta herramienta son:
+
+\begin{enumerate}
+ \item Completar
+ \item Descargar el archivo desde \textit{http://cakephp.org/}, en ``Download'' Se recomienda bajar la última versión 
+       estable\footnote{Hasta la fecha es la versión 2.3.x.}.
+ \item Descomprimir el archivo una vez descargado.% en /var/www/html.
+\end{enumerate}
+
+\subsubsection{Apache Server}
+
+Consiste en el servidor web  \textit{ ...Completar}
 
 \subsection{Tecnologías Emergentes}
+
+\subsubsection{Rails}
+
+Consiste en un framework de Ruby, orientado a desarrollo web. Los pasos para instalar y dejar funcional esta herramienta son:
+
+\begin{enumerate}
+ \item Completar
+ \item Abrir una consola  y posicionarse en la carpeta descomprimida.
+ \item despues de realizar las configuraciones necesarias (con rails new y eso ) \textbf{modificar y completar este punto}
+ \item Acceder a app/config dentro de la instalación, y como root ejecutar rails server.
+\end{enumerate}
+
+
+\subsubsection{Django}
+
+Consiste en un framework de Python, orientado a desarrollo web. Los pasos para instalar y dejar funcional esta herramienta son:
+\begin{enumerate}
+ \item Descargar el archivo desde \textit{https://www.djangoproject.com/download/}. Se recomienda bajar la última versión 
+       estable\footnote{Hasta la fecha es la versión 1.5.1.}.
+ \item Descomprimir el archivo una vez descargado.
+ \item Abrir una consola  y posicionarse en la carpeta descomprimida.
+ \item Ejecutar python setup.py install (como root).
+ \item Para sincronzar con la base de datos Mysql, utilizando syncdb \footnote{Considerando Mysql instalado.}
+ \begin{enumerate}
+  \item Instalar mysql-python, en Fedora 17 yum install mysql-python.
+  \item Para ver la solucion a posibles errores, puede visitar la sección de anexos.
+ \end{enumerate}
+
+Django cuenta con una serie de archivos que se crean de forma automatica a la hora de crear un proyecto, ellos son:
+\begin{itemize}
+ \item \textbf{manage.py}: Es una utilidad de linea de comandos que permite al desarrollador interactuar con el proyecto de diversas 
+      formas.
+ \item \textbf{\_\_init\_\_.py}: Es un archivo vacio que le dice a Django que, la carpeta en la que se encuentra, debe ser considerada como
+      un paquete.
+ \item \textbf{settings.py}: Es un archivo que contine configuraciones para el proyecto en particular.
+ \item \textbf{url.py}: Es un archivo que posee una ``taba de contenidos'' de como funcionan las URL.
+\end{itemize}
+Para consultar información detallada, puede acceder a la documentación de Django [39].
+
+
+
+\end{enumerate}
+
+
+
+\subsubsection{Nodejs}
+
+Consiste en un framework de js basado en el motor V8 de Google. Los pasos para instalar y dejar funcional esta herramienta son:
+
+\begin{enumerate}
+ \item Descargar el archivo en \textit{http://nodejs.org/}, install.
+ \item Una vez descargado, descomprimir y seguir los pasos del archivo ``Readme.md''.
+ \item En una consola y posicionandose en la carpeta descomprimida, ejecutar:
+ \begin{enumerate}
+  \item ./configure
+  \item make
+  \item make install (pide permisos de root)
+ \end{enumerate}
+ \item Es necesario tener gcc instalado, sino aparecerá un error.
+ \item Para ver soluciones a posibles errores, puede visitar la sección de anexos.
+\end{enumerate}
+
+Para configurar la herramienta con la Base de Datos:
+\textit{agregar informacion cuando se realice}
+
+\subsection{Motor de Base de Datos}
+ 
+Para instalar y configurar el motor de Base de Datos Mysql (común para todas las herramientas) en Fedora 17 [38], es necesario:
+\begin{enumerate}
+ \item Abrir una consola y acceder como usuario root.
+ \item Ejecutar yum install mysql-server.
+ \item Una vez instalado, ejecutar systemctl start mysqld.service.
+ \item Ejecutar systemctl enable mysqld.service para que inicie el servicio al iniciar el SO \footnote{Sistema Operativo}.
+ \item Conectarse a mysql a través de \textbf{mysql -u root} y:
+ \begin{enumerate}
+  \item Identificar la información inicial de la Base de Datos:
+   \begin{center}
+   \begin{verbatim}
+    mysql> select user,host,password from mysql.user;
++------+-----------+-------------------------------------------+
+| user | host      | password                                  |
++------+-----------+-------------------------------------------+
+| root | localhost |                                           |
+| root | tarrito   |                                           |
+| root | 127.0.0.1 |                                           |
+| root | ::1       |                                           |
+|      | localhost |                                           |
+|      | tarrito   |                                           |
++------+-----------+-------------------------------------------+
+
+
+   \end{verbatim}
+   \end{center}
+\item Establecer contraseñas:
+   \begin{center}
+   \begin{verbatim}
+mysql> set password for root@localhost=password('******');
+mysql> set password for root@'tarrito'=password('******');
+mysql> set password for root@'127.0.0.1'=password('******');
+   \end{verbatim}
+   \end{center}
+
+ \item El password no necesariamente debe ser el mismo de root.
+\item Y verificando la información:
+   \begin{center}
+   \begin{verbatim}
+mysql> select user,host,password from mysql.user;
++------+-----------+-------------------------------------------+
+| user | host      | password                                  |
++------+-----------+-------------------------------------------+
+| root | localhost | *7C65DFE6EA91038267275D4DB8D9C16DAFCBD3F8 |
+| root | tarrito   | *7C65DFE6EA91038267275D4DB8D9C16DAFCBD3F8 |
+| root | 127.0.0.1 | *7C65DFE6EA91038267275D4DB8D9C16DAFCBD3F8 |
+| root | ::1       |                                           |
+|      | localhost |                                           |
+|      | tarrito   |                                           |
++------+-----------+-------------------------------------------+
+   \end{verbatim}
+   \end{center}
+
+ \end{enumerate}
+
+ 
+\end{enumerate}
 
 \newpage

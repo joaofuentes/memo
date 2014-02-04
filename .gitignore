@@ -1,0 +1,7 @@
+*.aux
+*.toc
+*.log
+*.tex~
+*.backup
+*.snm
+*.nav
